@@ -32,7 +32,7 @@ The script can still be run, but may produce errors for workloads that depend on
 
 ### Creating the charts
 
-The Python script and instructions for creating the charts are in the [charts](./charts/README.md) folder.
+The Python script and instructions for creating the charts are in the [charts](./charts/) folder.
 
 ### Prerequisites/Dependencies
 
