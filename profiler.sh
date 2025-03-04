@@ -15,7 +15,7 @@
 #
 
 ### Error handling ###
-set -euo pipefail
+set -o pipefail
 
 ### Print out usage information ###
 script_usage() { cat <<EOT

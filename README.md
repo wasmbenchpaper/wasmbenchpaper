@@ -24,7 +24,12 @@ Further we have targetted WASM for our benchmarking while the original paper was
 For convenience we have created a single Bash script to run all of the workloads and do all of the profiling.
 
 ```shell
+# run the script to get some usage instructions
 ./profiler.sh
+# this will fail but it gives us some idea on how to run it properly
+
+# run with all the required parameters specified
+iter=1 container_namespace=us.icr.io/polyglotwasmbench wasmtime_original_loc=/path/to/wasmtime wasmtime_socket_loc=/path/to/wasmtime/socket ./profiler.sh
 ```
 
 Unfortunately due to git size constraints we had to remove certain large files (example: ~500MB file used in copy file workload).
