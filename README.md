@@ -27,7 +27,7 @@ For convenience we have created a single Bash script to run all of the workloads
 ./profiler.sh
 ```
 
-Unfornately due to git size constraints we had to remove certain large files (example: ~500MB file used in copy file workload).
+Unfortunately due to git size constraints we had to remove certain large files (example: ~500MB file used in copy file workload).
 The script can still be run, but may produce errors for workloads that depend on such large files.
 
 ### Creating the charts
