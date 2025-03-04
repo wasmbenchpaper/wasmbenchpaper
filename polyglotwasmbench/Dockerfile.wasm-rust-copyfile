@@ -1,0 +1,12 @@
+FROM ubuntu:22.10
+
+WORKDIR /app
+
+
+COPY copy-file/move2kube.mp4 move2kube.mp4
+
+# Copy WASM module
+COPY --from=us.icr.io/polyglotwasmbench/sdk-wasm-library-time:latest /wasms/copy-file/rust/main.wasm main.wasm
+
+
+CMD ["main.wasm", "./move2kube.mp4", "./move2kube_copy.mp4"]

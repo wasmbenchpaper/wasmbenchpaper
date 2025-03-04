@@ -1,0 +1,4 @@
+FROM ubuntu
+COPY nosimd nosimd
+CMD ["./nosimd", "256", "256", "100"]
+

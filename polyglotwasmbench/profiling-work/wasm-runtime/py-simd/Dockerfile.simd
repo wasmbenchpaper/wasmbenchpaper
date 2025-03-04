@@ -1,0 +1,3 @@
+FROM scratch
+COPY simd.py simd.py
+CMD ["./simd.py", "256", "256", "100"]

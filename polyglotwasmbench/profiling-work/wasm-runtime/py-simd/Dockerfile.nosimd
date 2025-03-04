@@ -1,0 +1,3 @@
+FROM scratch
+COPY nosimd.py nosimd.py
+CMD ["./nosimd.py", "256", "256", "100"]

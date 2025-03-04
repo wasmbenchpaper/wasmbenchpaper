@@ -1,0 +1,6 @@
+FROM ubuntu
+COPY graph.wasm graph.wasm
+COPY wasmtime wasmtime
+COPY graph-250000-edges.txt graph-250000-edges.txt
+CMD ["./graph.wasm", "graph-250000-edges.txt"]
+

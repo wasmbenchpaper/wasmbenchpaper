@@ -1,0 +1,10 @@
+[package]
+edition = "2021"
+name = "embed_rust"
+version = "0.1.0"
+
+[dependencies]
+anyhow = "1.0.69"
+libc = "0.2.139"
+wasmtime = "6.0.0"
+wasmtime-wasi = "6.0.0"

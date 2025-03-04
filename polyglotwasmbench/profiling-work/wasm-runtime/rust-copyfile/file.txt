@@ -1,0 +1,1386 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 8K of event 'cycles'
+# Event count (approx.): 6102347960
+#
+# Overhead  Command   Shared Object      Symbol                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+# ........  ........  .................  .............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+#
+     3.57%  wasmtime  libc-2.31.so       [.] __nss_database_lookup
+     2.51%  wasmtime  [kernel.kallsyms]  [k] copy_user_enhanced_fast_string
+     1.54%  wasmtime  wasmtime           [.] sha2::sha256::soft::sha256_digest_round_x2
+     1.40%  wasmtime  wasmtime           [.] sha2::sha256::soft::sha256_digest_block_u32
+     0.80%  wasmtime  libc-2.31.so       [.] malloc
+     0.78%  wasmtime  [kernel.kallsyms]  [k] do_syscall_64
+     0.72%  wasmtime  [kernel.kallsyms]  [k] syscall_return_via_sysret
+     0.69%  wasmtime  wasmtime           [.] sha2::sha256::soft::sha256msg1::sigma0x4
+     0.61%  wasmtime  [kernel.kallsyms]  [k] cshook_security_inode_free_security
+     0.57%  wasmtime  [kernel.kallsyms]  [k] __add_to_page_cache_locked
+     0.57%  wasmtime  [kernel.kallsyms]  [k] try_charge
+     0.56%  wasmtime  wasmtime           [.] core::ptr::mut_ptr::<impl *mut T>::guaranteed_eq
+     0.56%  wasmtime  [kernel.kallsyms]  [k] clear_page_erms
+     0.53%  wasmtime  wasmtime           [.] wasi_common::snapshots::preview_1::wasi_snapshot_preview1::fd_read::{{closure}}
+     0.51%  wasmtime  wasmtime           [.] core::sync::atomic::atomic_load
+     0.51%  wasmtime  wasmtime           [.] sha2::sha256::soft::schedule
+     0.50%  wasmtime  [kernel.kallsyms]  [k] entry_SYSCALL_64_after_hwframe
+     0.47%  wasmtime  [kernel.kallsyms]  [k] cshook_security_netlink_send
+     0.43%  wasmtime  [kernel.kallsyms]  [k] cshook_network_ops_inet6_sockraw_release
+     0.41%  wasmtime  [kernel.kallsyms]  [k] xas_load
+     0.40%  wasmtime  [kernel.kallsyms]  [k] crc32c_pcl_intel_update
+     0.40%  wasmtime  wasmtime           [.] core::sync::atomic::atomic_load
+     0.39%  wasmtime  wasmtime           [.] wasi_common::snapshots::preview_1::wasi_snapshot_preview1::fd_write::{{closure}}
+     0.36%  wasmtime  wasmtime           [.] core::result::Result<T,E>::map
+     0.35%  wasmtime  wasmtime           [.] wasi_common::snapshots::preview_1::<impl wasi_common::snapshots::preview_1::wasi_snapshot_preview1::WasiSnapshotPreview1 for wasi_common::ctx::WasiCtx>::fd_read::{{closure}}
+     0.35%  wasmtime  wasmtime           [.] hashbrown::raw::RawTableInner<A>::find_inner
+     0.35%  wasmtime  wasmtime           [.] core::alloc::layout::Layout::array::inner
+     0.33%  wasmtime  [kernel.kallsyms]  [k] active_template+0x800000006f20
+     0.33%  wasmtime  wasmtime           [.] core::sync::atomic::atomic_compare_exchange
+     0.33%  wasmtime  wasmtime           [.] 0x00000000004221e8
+     0.32%  wasmtime  wasmtime           [.] wasmtime_wasi::sync::snapshots::preview_1::add_wasi_snapshot_preview1_to_linker::{{closure}}::{{closure}}
+     0.32%  wasmtime  wasmtime           [.] core::sync::atomic::atomic_swap
+     0.31%  wasmtime  wasmtime           [.] core::fmt::Arguments::new_v1
+     0.29%  wasmtime  [kernel.kallsyms]  [k] ext4_do_update_inode
+     0.29%  wasmtime  wasmtime           [.] <log::Level as core::cmp::PartialOrd<log::LevelFilter>>::le
+     0.28%  wasmtime  [kernel.kallsyms]  [k] get_mem_cgroup_from_mm
+     0.28%  wasmtime  wasmtime           [.] <core::hash::sip::Sip13Rounds as core::hash::sip::Sip>::d_rounds
+     0.28%  wasmtime  wasmtime           [.] core::num::<impl u32>::from_be_bytes
+     0.27%  wasmtime  wasmtime           [.] sha2::sha256::soft::compress
+     0.27%  wasmtime  wasmtime           [.] wasmtime::instance::Instance::_get_export
+     0.26%  wasmtime  wasmtime           [.] core::hash::sip::Hasher<S>::new_with_keys
+     0.26%  wasmtime  wasmtime           [.] core::core_arch::x86::sse2::_mm_set_epi8
+     0.24%  wasmtime  wasmtime           [.] wasi_common::snapshots::preview_1::wasi_snapshot_preview1::fd_read
+     0.24%  wasmtime  wasmtime           [.] <core::hash::sip::Sip13Rounds as core::hash::sip::Sip>::c_rounds
+     0.24%  wasmtime  [kernel.kallsyms]  [k] _ZdlPv
+     0.24%  wasmtime  wasmtime           [.] <log::Level as core::cmp::PartialOrd<log::LevelFilter>>::le
+     0.24%  wasmtime  wasmtime           [.] core::ptr::mut_ptr::<impl *mut T>::is_null
+     0.24%  wasmtime  wasmtime           [.] hashbrown::raw::Bucket<T>::from_base_index
+     0.24%  wasmtime  wasmtime           [.] wasi_common::snapshots::preview_1::<impl wasi_common::snapshots::preview_1::wasi_snapshot_preview1::WasiSnapshotPreview1 for wasi_common::ctx::WasiCtx>::fd_write::{{closure}}
+     0.24%  wasmtime  libc-2.31.so       [.] pthread_attr_setschedparam
+     0.24%  wasmtime  [kernel.kallsyms]  [k] entry_SYSCALL_64
+     0.23%  wasmtime  wasmtime           [.] core::ptr::mut_ptr::<impl *mut T>::is_null
+     0.23%  wasmtime  wasmtime           [.] <F as wasmtime::func::IntoFunc<T,(wasmtime::func::Caller<T>,A1,A2,A3,A4),R>>::into_func::wasm_to_host_shim::{{closure}}::{{closure}}
+     0.23%  wasmtime  wasmtime           [.] wiggle::validate_size_align
+     0.23%  wasmtime  wasmtime           [.] core::result::Result<T,E>::unwrap
+     0.22%  wasmtime  wasmtime           [.] wasmtime_wasi::sync::snapshots::preview_1::add_wasi_snapshot_preview1_to_linker::{{closure}}::{{closure}}
+     0.22%  wasmtime  wasmtime           [.] sha2::sha256::soft::sha256msg2
+     0.22%  wasmtime  wasmtime           [.] hashbrown::raw::RawTable<T,A>::iter
+     0.22%  wasmtime  [kernel.kallsyms]  [k] _raw_spin_lock
+     0.22%  wasmtime  [kernel.kallsyms]  [k] xas_store
+     0.21%  wasmtime  [kernel.kallsyms]  [k] find_get_entry
+     0.21%  wasmtime  [kernel.kallsyms]  [k] kmem_cache_alloc
+     0.21%  wasmtime  [kernel.kallsyms]  [k] rmqueue
+     0.20%  wasmtime  [kernel.kallsyms]  [k] mem_cgroup_try_charge
+     0.19%  wasmtime  wasmtime           [.] <F as wasmtime::func::IntoFunc<T,(wasmtime::func::Caller<T>,A1,A2,A3,A4),R>>::into_func::wasm_to_host_shim::{{closure}}::{{closure}}
+     0.19%  wasmtime  wasmtime           [.] core::ptr::non_null::NonNull<T>::new
+     0.19%  wasmtime  wasmtime           [.] wiggle::run_in_dummy_executor
+     0.19%  wasmtime  wasmtime           [.] tracing::span::Span::log
+     0.19%  wasmtime  [kernel.kallsyms]  [k] unload_network_ops_symbols
+     0.19%  wasmtime  wasmtime           [.] wiggle::run_in_dummy_executor
+     0.19%  wasmtime  wasmtime           [.] __rdl_alloc
+     0.19%  wasmtime  wasmtime           [.] core::mem::replace
+     0.19%  wasmtime  [kernel.kallsyms]  [k] down_read
+     0.19%  wasmtime  wasmtime           [.] core::slice::<impl [T]>::align_to
+     0.19%  wasmtime  [kernel.kallsyms]  [k] cshook_security_file_free_security
+     0.18%  wasmtime  wasmtime           [.] core::hash::impls::<impl core::hash::Hash for usize>::hash
+     0.18%  wasmtime  wasmtime           [.] wasmtime::memory::Memory::data_mut
+     0.18%  wasmtime  wasmtime           [.] alloc::alloc::Global::alloc_impl
+     0.18%  wasmtime  wasmtime           [.] core::num::<impl u32>::checked_mul
+     0.18%  wasmtime  [kernel.kallsyms]  [k] unload_network_ops_symbols
+     0.18%  wasmtime  wasmtime           [.] <F as wasmtime::func::IntoFunc<T,(wasmtime::func::Caller<T>,A1,A2,A3,A4),R>>::into_func::wasm_to_host_shim::{{closure}}
+     0.18%  wasmtime  wasmtime           [.] <alloc::sync::Arc<T> as core::ops::deref::Deref>::deref
+     0.18%  wasmtime  wasmtime           [.] core::cmp::Ord::min
+     0.17%  wasmtime  wasmtime           [.] <core::hash::sip::Hasher<S> as core::hash::Hasher>::finish
+     0.17%  wasmtime  wasmtime           [.] core::slice::<impl [T]>::align_to_offsets
+     0.17%  wasmtime  wasmtime           [.] <tracing::instrument::Instrumented<T> as core::future::future::Future>::poll
+     0.17%  wasmtime  wasmtime           [.] alloc::alloc::box_free
+     0.17%  wasmtime  wasmtime           [.] std::thread::local::fast::Key<T>::get
+     0.17%  wasmtime  wasmtime           [.] core::slice::<impl [T]>::align_to
+     0.17%  wasmtime  wasmtime           [.] wasmtime::func::Caller<T>::get_export
+     0.17%  wasmtime  wasmtime           [.] hashbrown::raw::inner::RawTableInner<A>::find_inner
+     0.17%  wasmtime  wasmtime           [.] <wasmtime::store::data::StoreData as core::ops::index::Index<wasmtime::store::data::Stored<T>>>::index
+     0.17%  wasmtime  [kernel.kallsyms]  [k] ext4_da_map_blocks.constprop.0
+     0.16%  wasmtime  wasmtime           [.] <wasmtime::store::StoreInner<T> as core::ops::deref::Deref>::deref
+     0.16%  wasmtime  wasmtime           [.] core::option::Option<T>::ok_or
+     0.16%  wasmtime  wasmtime           [.] <core::ops::range::Range<usize> as core::slice::index::SliceIndex<[T]>>::get
+     0.16%  wasmtime  wasmtime           [.] <wasmtime::store::data::StoreData as core::ops::index::Index<wasmtime::store::data::Stored<T>>>::index
+     0.16%  wasmtime  [kernel.kallsyms]  [k] __ext4_get_inode_loc
+     0.16%  wasmtime  wasmtime           [.] wasi_common::table::Table::get
+     0.16%  wasmtime  wasmtime           [.] core::ptr::mut_ptr::<impl *mut T>::is_null
+     0.16%  wasmtime  wasmtime           [.] <hashbrown::raw::bitmask::BitMaskIter as core::iter::traits::iterator::Iterator>::next
+     0.16%  wasmtime  wasmtime           [.] <tracing_core::field::Iter as core::iter::traits::iterator::Iterator>::next
+     0.16%  wasmtime  wasmtime           [.] core::ptr::mut_ptr::<impl *mut T>::is_null
+     0.16%  wasmtime  wasmtime           [.] core::mem::swap_simple
+     0.16%  wasmtime  wasmtime           [.] <T as wasmtime::func::WasmRet>::compatible_with_store
+     0.16%  wasmtime  [kernel.kallsyms]  [k] crowdstrike_probe_sched_process_exec
+     0.16%  wasmtime  wasmtime           [.] hashbrown::raw::RawTableInner<A>::find_insert_slot
+     0.16%  wasmtime  wasmtime           [.] hashbrown::raw::RawTableInner<A>::erase
+     0.15%  wasmtime  [kernel.kallsyms]  [k] block_invalidatepage
+     0.15%  wasmtime  [kernel.kallsyms]  [k] kmem_cache_free
+     0.15%  wasmtime  [kernel.kallsyms]  [k] node_dirty_ok
+     0.15%  wasmtime  wasmtime           [.] <wasi_cap_std_sync::file::File as wasi_common::file::WasiFile>::read_vectored::{{closure}}
+     0.15%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<tracing::span::Span>
+     0.15%  wasmtime  wasmtime           [.] <F as wasmtime::func::IntoFunc<T,(wasmtime::func::Caller<T>,A1,A2,A3,A4),R>>::into_func::wasm_to_host_shim
+     0.15%  wasmtime  libc-2.31.so       [.] free
+     0.15%  wasmtime  wasmtime           [.] hashbrown::raw::inner::RawTableInner<A>::probe_seq
+     0.15%  wasmtime  [kernel.kallsyms]  [k] unload_network_ops_symbols
+     0.15%  wasmtime  [kernel.kallsyms]  [k] iov_iter_fault_in_readable
+     0.15%  wasmtime  wasmtime           [.] core::cmp::Ord::min
+     0.15%  wasmtime  wasmtime           [.] core::ptr::const_ptr::<impl *const T>::is_null
+     0.14%  wasmtime  wasmtime           [.] wiggle::validate_size_align
+     0.14%  wasmtime  [kernel.kallsyms]  [k] ext4_bio_write_page
+     0.14%  wasmtime  [kernel.kallsyms]  [k] __alloc_pages_nodemask
+     0.13%  wasmtime  wasmtime           [.] indexmap::map::core::IndexMapCore<K,V>::len
+     0.13%  wasmtime  wasmtime           [.] wasmtime_runtime::instance::Instance::vmctx_plus_offset
+     0.13%  wasmtime  wasmtime           [.] tracing::span::Span::record_all
+     0.13%  wasmtime  wasmtime           [.] wasmtime::instance::Instance::get_export
+     0.13%  wasmtime  wasmtime           [.] <F as wasmtime::func::IntoFunc<T,(wasmtime::func::Caller<T>,A1,A2,A3,A4),R>>::into_func::wasm_to_host_shim::{{closure}}
+     0.13%  wasmtime  wasmtime           [.] <alloc::sync::Arc<T> as core::ops::drop::Drop>::drop
+     0.13%  wasmtime  wasmtime           [.] core::mem::replace
+     0.13%  wasmtime  wasmtime           [.] <std::collections::hash::map::DefaultHasher as core::hash::Hasher>::write_str
+     0.13%  wasmtime  wasmtime           [.] std::panicking::try
+     0.13%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.13%  wasmtime  wasmtime           [.] core::hash::sip::u8to64_le
+     0.13%  wasmtime  wasmtime           [.] hashbrown::raw::RawTable<T,A>::reserve_rehash
+     0.13%  wasmtime  wasmtime           [.] wasi_common::snapshots::preview_1::<impl wasi_common::snapshots::preview_1::wasi_snapshot_preview1::WasiSnapshotPreview1 for wasi_common::ctx::WasiCtx>::fd_write::{{closure}}::{{closure}}
+     0.13%  wasmtime  wasmtime           [.] core::option::Option<&T>::cloned
+     0.13%  wasmtime  wasmtime           [.] std::sync::mutex::Mutex<T>::lock
+     0.13%  wasmtime  wasmtime           [.] core::option::Option<T>::and_then
+     0.13%  wasmtime  wasmtime           [.] wasmtime_wasi::sync::snapshots::preview_1::add_wasi_snapshot_preview1_to_linker::{{closure}}
+     0.13%  wasmtime  wasmtime           [.] core::slice::cmp::<impl core::cmp::PartialEq<[B]> for [A]>::eq
+     0.13%  wasmtime  wasmtime           [.] core::any::TypeId::of
+     0.13%  wasmtime  wasmtime           [.] core::num::<impl usize>::checked_mul
+     0.13%  wasmtime  wasmtime           [.] core::cmp::Ord::max
+     0.13%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<core::cell::UnsafeCell<wiggle::borrow::InnerBorrowChecker>>
+     0.13%  wasmtime  [kernel.kallsyms]  [k] xas_find_conflict
+     0.13%  wasmtime  wasmtime           [.] <wasmtime::store::context::StoreContextMut<T> as wasmtime::store::context::AsContextMut>::as_context_mut
+     0.13%  wasmtime  wasmtime           [.] <core::pin::Pin<P> as core::future::future::Future>::poll
+     0.13%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.13%  wasmtime  wasmtime           [.] <wasi_common::file::FileEntry as wasi_common::file::FileEntryExt>::get_cap
+     0.13%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<wiggle::error::GuestError>
+     0.13%  wasmtime  wasmtime           [.] sha2::sha256::soft::sha256msg1
+     0.13%  wasmtime  [kernel.kallsyms]  [k] __x86_indirect_thunk_rax
+     0.13%  wasmtime  wasmtime           [.] core::sync::atomic::atomic_compare_exchange_weak
+     0.13%  wasmtime  [kernel.kallsyms]  [k] generic_perform_write
+     0.13%  wasmtime  wasmtime           [.] wiggle::validate_size_align
+     0.12%  wasmtime  wasmtime           [.] <core::iter::adapters::zip::Zip<A,B> as core::iter::adapters::zip::ZipImpl<A,B>>::next
+     0.12%  wasmtime  wasmtime           [.] <u32 as wiggle::guest_type::GuestType>::write
+     0.12%  wasmtime  wasmtime           [.] <wasmtime::store::StoreInner<T> as core::ops::deref::DerefMut>::deref_mut
+     0.12%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T> as alloc::vec::spec_from_iter_nested::SpecFromIterNested<T,I>>::from_iter
+     0.12%  wasmtime  wasmtime           [.] <std::fs::File as std::os::fd::owned::AsFd>::as_fd
+     0.12%  wasmtime  wasmtime           [.] core::hash::impls::<impl core::hash::Hash for &T>::hash
+     0.12%  wasmtime  [kernel.kallsyms]  [k] ext4_da_write_begin
+     0.12%  wasmtime  wasmtime           [.] wiggle::GuestPtr<T>::add
+     0.12%  wasmtime  wasmtime           [.] <core::panic::unwind_safe::AssertUnwindSafe<F> as core::ops::function::FnOnce<()>>::call_once
+     0.12%  wasmtime  wasmtime           [.] hashbrown::raw::TableLayout::calculate_layout_for
+     0.12%  wasmtime  [kernel.kallsyms]  [k] pinnedhook_security_file_permission
+     0.12%  wasmtime  wasmtime           [.] hashbrown::raw::Bucket<T>::from_base_index
+     0.12%  wasmtime  [kernel.kallsyms]  [k] copy_page_to_iter
+     0.12%  wasmtime  wasmtime           [.] core::option::Option<T>::as_ref
+     0.12%  wasmtime  wasmtime           [.] core::sync::atomic::atomic_load
+     0.12%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<std::sync::mutex::Mutex<wiggle::borrow::InnerBorrowChecker>>
+     0.12%  wasmtime  wasmtime           [.] core::ops::function::FnOnce::call_once
+     0.12%  wasmtime  wasmtime           [.] std::sys::unix::locks::futex_rwlock::RwLock::read
+     0.12%  wasmtime  wasmtime           [.] wasi_common::snapshots::preview_1::wasi_snapshot_preview1::fd_write
+     0.12%  wasmtime  [kernel.kallsyms]  [k] memcg_kmem_get_cache
+     0.12%  wasmtime  wasmtime           [.] wasmtime_runtime::instance::Instance::host_state
+     0.12%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<wiggle::borrow::BorrowChecker>
+     0.12%  wasmtime  wasmtime           [.] core::ptr::mut_ptr::<impl *mut T>::is_null
+     0.12%  wasmtime  wasmtime           [.] wasmtime::memory::Memory::data_and_store_mut
+     0.12%  wasmtime  wasmtime           [.] hashbrown::raw::inner::RawTable<T,A>::get
+     0.12%  wasmtime  wasmtime           [.] std::panicking::try::do_call
+     0.12%  wasmtime  wasmtime           [.] core::ptr::mut_ptr::<impl *mut T>::is_null
+     0.12%  wasmtime  wasmtime           [.] wasmtime_runtime::instance::Instance::offsets
+     0.12%  wasmtime  wasmtime           [.] tracing_core::metadata::Metadata::name
+     0.12%  wasmtime  [kernel.kallsyms]  [k] map_id_up
+     0.12%  wasmtime  [kernel.kallsyms]  [k] fget
+     0.12%  wasmtime  [kernel.kallsyms]  [k] drop_buffers
+     0.12%  wasmtime  [kernel.kallsyms]  [k] _cond_resched
+     0.11%  wasmtime  [kernel.kallsyms]  [k] __mod_lruvec_state
+     0.11%  wasmtime  [kernel.kallsyms]  [k] percpu_counter_add_batch
+     0.11%  wasmtime  wasmtime           [.] core::slice::raw::from_raw_parts
+     0.11%  wasmtime  wasmtime           [.] std::panic::catch_unwind
+     0.11%  wasmtime  wasmtime           [.] core::option::Option<T>::ok_or
+     0.11%  wasmtime  [kernel.kallsyms]  [k] __mark_inode_dirty
+     0.11%  wasmtime  wasmtime           [.] core::slice::<impl [T]>::align_to_offsets
+     0.11%  wasmtime  wasmtime           [.] __rust_try
+     0.11%  wasmtime  wasmtime           [.] wasmtime::store::data::Stored<T>::assert_belongs_to
+     0.11%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<core::option::Option<wasmtime::externals::Extern>>
+     0.11%  wasmtime  wasmtime           [.] <wiggle::wasmtime::WasmtimeGuestMemory as wiggle::GuestMemory>::is_shared_borrowed
+     0.11%  wasmtime  [kernel.kallsyms]  [k] security_file_permission
+     0.11%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.11%  wasmtime  wasmtime           [.] <core::result::Result<T,anyhow::Error> as wasmtime::func::WasmRet>::into_fallible
+     0.11%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.11%  wasmtime  wasmtime           [.] core::future::get_context
+     0.11%  wasmtime  wasmtime           [.] <core::pin::Pin<P> as core::future::future::Future>::poll
+     0.11%  wasmtime  wasmtime           [.] <core::option::Option<T> as core::ops::try_trait::Try>::branch
+     0.11%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T,A> as core::ops::deref::Deref>::deref
+     0.11%  wasmtime  wasmtime           [.] core::array::<impl core::borrow::Borrow<[T]> for [T; N]>::borrow
+     0.11%  wasmtime  [kernel.kallsyms]  [k] common_file_perm
+     0.11%  wasmtime  wasmtime           [.] core::core_arch::x86::sse2::_mm_cmpeq_epi8
+     0.11%  wasmtime  wasmtime           [.] core::slice::<impl [T]>::split_at_unchecked
+     0.11%  wasmtime  wasmtime           [.] wasmtime_runtime::vmcontext::vm_host_func_context::VMHostFuncContext::from_opaque
+     0.11%  wasmtime  wasmtime           [.] <wasmtime::module::ModuleInner as wasmtime_runtime::ModuleRuntimeInfo>::offsets
+     0.11%  wasmtime  wasmtime           [.] wasmtime::store::StoreInner<T>::call_hook
+     0.11%  wasmtime  wasmtime           [.] hashbrown::raw::inner::h2
+     0.11%  wasmtime  wasmtime           [.] tracing_core::field::FieldSet::callsite
+     0.11%  wasmtime  [kernel.kallsyms]  [k] ext4_inode_csum.isra.0
+     0.11%  wasmtime  wasmtime           [.] <i32 as wasmtime::func::typed::WasmTy>::compatible_with_store
+     0.11%  wasmtime  libc-2.31.so       [.] pthread_setcanceltype
+     0.11%  wasmtime  wasmtime           [.] core::ptr::mut_ptr::<impl *mut T>::is_null
+     0.11%  wasmtime  wasmtime           [.] hashbrown::raw::RawIterRange<T>::new
+     0.11%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T,A> as core::ops::deref::Deref>::deref
+     0.11%  wasmtime  [kernel.kallsyms]  [k] rcu_all_qs
+     0.11%  wasmtime  wasmtime           [.] core::core_arch::x86::sse2::_mm_movemask_epi8
+     0.11%  wasmtime  wasmtime           [.] core::cmp::Ord::min
+     0.11%  wasmtime  wasmtime           [.] core::slice::<impl [T]>::align_to_offsets
+     0.11%  wasmtime  wasmtime           [.] wasmtime::func::Caller<T>::with
+     0.11%  wasmtime  wasmtime           [.] hashbrown::raw::inner::Bucket<T>::from_base_index
+     0.11%  wasmtime  wasmtime           [.] alloc::sync::Arc<dyn core::any::Any+core::marker::Send+core::marker::Sync>::downcast
+     0.11%  wasmtime  wasmtime           [.] core::any::TypeId::of
+     0.11%  wasmtime  wasmtime           [.] core::core_arch::x86::sse2::_mm_movemask_epi8
+     0.11%  wasmtime  wasmtime           [.] hashbrown::raw::RawTableInner<A>::fallible_with_capacity
+     0.11%  wasmtime  wasmtime           [.] wiggle::GuestPtr<[T]>::iter
+     0.11%  wasmtime  [kernel.kallsyms]  [k] pinnedhook_security_file_permission
+     0.11%  wasmtime  wasmtime           [.] <T as core::any::Any>::type_id
+     0.11%  wasmtime  [kernel.kallsyms]  [k] pinnedhook_security_file_permission
+     0.11%  wasmtime  wasmtime           [.] core::ptr::mut_ptr::<impl *mut T>::guaranteed_eq
+     0.11%  wasmtime  wasmtime           [.] hashbrown::raw::inner::RawTable<T,A>::len
+     0.11%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.11%  wasmtime  wasmtime           [.] hashbrown::raw::inner::Bucket<T>::as_ptr
+     0.11%  wasmtime  wasmtime           [.] <core::slice::iter::ChunksExact<T> as core::iter::traits::iterator::Iterator>::__iterator_get_unchecked
+     0.11%  wasmtime  [kernel.kallsyms]  [k] ext4_invalidatepage
+     0.10%  wasmtime  [kernel.kallsyms]  [k] xas_start
+     0.10%  wasmtime  [kernel.kallsyms]  [k] __test_set_page_writeback
+     0.10%  wasmtime  wasmtime           [.] core::array::<impl core::convert::TryFrom<&[T]> for [T; N]>::try_from::{{closure}}
+     0.10%  wasmtime  wasmtime           [.] std::sync::rwlock::RwLock<T>::read
+     0.10%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T,A> as core::ops::index::Index<I>>::index
+     0.10%  wasmtime  wasmtime           [.] core::core_arch::x86::sse2::_mm_set_epi8
+     0.10%  wasmtime  wasmtime           [.] std::thread::local::LocalKey<T>::with
+     0.10%  wasmtime  wasmtime           [.] hashbrown::raw::inner::RawTable<T,A>::data_end
+     0.10%  wasmtime  wasmtime           [.] wiggle::GuestPtr<T>::new
+     0.10%  wasmtime  [kernel.kallsyms]  [k] do_iter_readv_writev
+     0.10%  wasmtime  [kernel.kallsyms]  [k] node_page_state
+     0.10%  wasmtime  [kernel.kallsyms]  [k] page_counter_try_charge
+     0.10%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<wasmtime::externals::Extern>
+     0.10%  wasmtime  wasmtime           [.] hashbrown::raw::RawTable<T,A>::insert
+     0.10%  wasmtime  wasmtime           [.] core::ptr::mut_ptr::<impl *mut T>::guaranteed_eq
+     0.10%  wasmtime  [kernel.kallsyms]  [k] cshook_systemcalltable_pre_compat_sys_ioctl
+     0.10%  wasmtime  wasmtime           [.] tracing_core::field::FieldSet::value_set
+     0.10%  wasmtime  wasmtime           [.] wasmtime_runtime::instance::Instance::store
+     0.10%  wasmtime  wasmtime           [.] core::num::<impl u32>::checked_mul
+     0.10%  wasmtime  libc-2.31.so       [.] readv
+     0.10%  wasmtime  wasmtime           [.] wasmtime_runtime::instance::Instance::module
+     0.10%  wasmtime  wasmtime           [.] hashbrown::raw::inner::RawTable<T,A>::find::{{closure}}
+     0.10%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.10%  wasmtime  wasmtime           [.] wasmtime::store::data::StoreId::assert_belongs_to
+     0.10%  wasmtime  wasmtime           [.] core::result::Result<T,E>::map_err
+     0.10%  wasmtime  wasmtime           [.] wasmtime::store::StoreOpaque::store_data
+     0.10%  wasmtime  wasmtime           [.] indexmap::map::core::IndexMapCore<K,V>::get_index_of
+     0.10%  wasmtime  [kernel.kallsyms]  [k] start_this_handle
+     0.10%  wasmtime  wasmtime           [.] <core::hash::sip::Hasher<S> as core::hash::Hasher>::write_str
+     0.10%  wasmtime  wasmtime           [.] <std::sync::mutex::MutexGuard<T> as core::ops::drop::Drop>::drop
+     0.10%  wasmtime  wasmtime           [.] io_lifetimes::views::FilelikeView<Target>::new
+     0.10%  wasmtime  wasmtime           [.] core::future::get_context
+     0.10%  wasmtime  wasmtime           [.] core::ptr::mut_ptr::<impl *mut T>::guaranteed_eq
+     0.10%  wasmtime  wasmtime           [.] <alloc::sync::Arc<T> as core::ops::deref::Deref>::deref
+     0.10%  wasmtime  wasmtime           [.] core::any::TypeId::of
+     0.10%  wasmtime  wasmtime           [.] <wiggle::GuestPtr<T> as wiggle::guest_type::GuestType>::read
+     0.10%  wasmtime  [kernel.kallsyms]  [k] acquire_rundown
+     0.10%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<alloc::vec::Vec<std::io::IoSliceMut>>
+     0.10%  wasmtime  wasmtime           [.] hashbrown::raw::inner::RawTableInner<A>::num_ctrl_bytes
+     0.10%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T> as alloc::vec::spec_from_iter::SpecFromIter<T,I>>::from_iter
+     0.10%  wasmtime  wasmtime           [.] core::option::Option<T>::as_mut
+     0.10%  wasmtime  wasmtime           [.] core::future::identity_future
+     0.10%  wasmtime  wasmtime           [.] wiggle::GuestPtr<[T]>::as_unsafe_slice_mut
+     0.10%  wasmtime  wasmtime           [.] alloc::alloc::exchange_malloc
+     0.10%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.10%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T> as alloc::vec::spec_from_iter_nested::SpecFromIterNested<T,I>>::from_iter
+     0.10%  wasmtime  wasmtime           [.] <wasmtime::externals::Extern as core::clone::Clone>::clone
+     0.10%  wasmtime  wasmtime           [.] wasmtime::types::MemoryType::from_wasmtime_memory
+     0.10%  wasmtime  wasmtime           [.] core::cmp::impls::<impl core::cmp::Ord for usize>::cmp
+     0.10%  wasmtime  wasmtime           [.] <T as system_interface::io::io_ext::IoExt>::read_vectored
+     0.10%  wasmtime  wasmtime           [.] alloc::vec::Vec<T,A>::extend_trusted
+     0.10%  wasmtime  wasmtime           [.] core::slice::<impl [T]>::align_to_offsets::gcd
+     0.10%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T> as alloc::vec::spec_from_iter_nested::SpecFromIterNested<T,I>>::from_iter
+     0.10%  wasmtime  wasmtime           [.] <io_lifetimes::views::FilelikeView<Target> as core::ops::deref::Deref>::deref
+     0.10%  wasmtime  [kernel.kallsyms]  [k] get_page_from_freelist
+     0.10%  wasmtime  wasmtime           [.] <wiggle::GuestSlice<T> as core::ops::drop::Drop>::drop
+     0.10%  wasmtime  wasmtime           [.] wasmtime_runtime::instance::InstanceHandle::host_state
+     0.10%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.10%  wasmtime  wasmtime           [.] <core::slice::iter::IterMut<T> as core::iter::traits::iterator::Iterator>::size_hint
+     0.10%  wasmtime  wasmtime           [.] core::ptr::align_offset
+     0.10%  wasmtime  wasmtime           [.] core::iter::adapters::try_process
+     0.10%  wasmtime  wasmtime           [.] core::iter::adapters::try_process
+     0.10%  wasmtime  wasmtime           [.] hashbrown::raw::inner::RawTable<T,A>::bucket
+     0.10%  wasmtime  wasmtime           [.] <wiggle::BorrowHandle as core::hash::Hash>::hash
+     0.09%  wasmtime  [kernel.kallsyms]  [k] __mod_memcg_state
+     0.09%  wasmtime  [kernel.kallsyms]  [k] free_pcppages_bulk
+     0.09%  wasmtime  [kernel.kallsyms]  [k] release_pages
+     0.09%  wasmtime  [kernel.kallsyms]  [k] __mod_node_page_state
+     0.09%  wasmtime  [kernel.kallsyms]  [k] __lock_text_start
+     0.09%  wasmtime  wasmtime           [.] core::result::Result<T,E>::unwrap
+     0.09%  wasmtime  wasmtime           [.] <wasi_cap_std_sync::file::File as wasi_common::file::WasiFile>::write_vectored::{{closure}}
+     0.09%  wasmtime  [kernel.kallsyms]  [k] cshook_security_file_permission
+     0.09%  wasmtime  [kernel.kallsyms]  [k] ext4_journal_check_start
+     0.09%  wasmtime  wasmtime           [.] std::panicking::try::do_call
+     0.09%  wasmtime  wasmtime           [.] std::collections::hash::map::RandomState::new::{{closure}}
+     0.09%  wasmtime  wasmtime           [.] hashbrown::raw::inner::sse2::Group::load
+     0.09%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.09%  wasmtime  wasmtime           [.] wasi_common::ctx::WasiCtx::table
+     0.09%  wasmtime  wasmtime           [.] core::option::Option<T>::is_some
+     0.09%  wasmtime  wasmtime           [.] hashbrown::raw::RawTable<T,A>::erase_no_drop
+     0.09%  wasmtime  wasmtime           [.] wasmtime::func::Caller<T>::with
+     0.09%  wasmtime  wasmtime           [.] std::collections::hash::map::HashMap<K,V,S>::is_empty
+     0.09%  wasmtime  wasmtime           [.] core::ptr::mut_ptr::<impl *mut T>::is_null
+     0.09%  wasmtime  wasmtime           [.] core::iter::range::<impl core::iter::traits::iterator::Iterator for core::ops::range::Range<A>>::next
+     0.09%  wasmtime  wasmtime           [.] core::cmp::impls::<impl core::cmp::PartialOrd for usize>::lt
+     0.09%  wasmtime  [kernel.kallsyms]  [k] do_writev
+     0.09%  wasmtime  [kernel.kallsyms]  [k] release_rundown
+     0.09%  wasmtime  wasmtime           [.] core::slice::iter::Iter<T>::new
+     0.09%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T,A> as core::ops::deref::Deref>::deref
+     0.09%  wasmtime  wasmtime           [.] <wasi_common::snapshots::preview_1::types::Fd as core::convert::From<i32>>::from
+     0.09%  wasmtime  wasmtime           [.] core::iter::range::<impl core::iter::traits::iterator::Iterator for core::ops::range::Range<A>>::size_hint
+     0.09%  wasmtime  wasmtime           [.] core::iter::traits::iterator::Iterator::collect
+     0.09%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<tracing::span::Entered>
+     0.09%  wasmtime  [kernel.kallsyms]  [k] clear_page_dirty_for_io
+     0.09%  wasmtime  wasmtime           [.] wiggle::borrow::BorrowChecker::shared_unborrow
+     0.09%  wasmtime  wasmtime           [.] core::iter::traits::iterator::Iterator::try_fold
+     0.09%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.09%  wasmtime  wasmtime           [.] <wasmtime::func::Caller<T> as wasmtime::store::context::AsContextMut>::as_context_mut
+     0.09%  wasmtime  wasmtime           [.] core::iter::range::<impl core::iter::traits::iterator::Iterator for core::ops::range::Range<A>>::next
+     0.09%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<std::sync::mutex::MutexGuard<wiggle::borrow::InnerBorrowChecker>>
+     0.09%  wasmtime  [kernel.kallsyms]  [k] crypto_shash_update
+     0.09%  wasmtime  wasmtime           [.] <core::iter::adapters::GenericShunt<I,R> as core::iter::traits::iterator::Iterator>::next
+     0.09%  wasmtime  wasmtime           [.] wasmtime::store::data::<impl core::ops::index::Index<I> for wasmtime::store::StoreOpaque>::index
+     0.09%  wasmtime  wasmtime           [.] core::convert::num::ptr_try_from_impls::<impl core::convert::TryFrom<u32> for usize>::try_from
+     0.09%  wasmtime  wasmtime           [.] <indexmap::map::IndexMap<K,V,S> as indexmap::Entries>::as_entries
+     0.09%  wasmtime  wasmtime           [.] <T as io_lifetimes::portability::FromFilelike>::from_filelike
+     0.09%  wasmtime  wasmtime           [.] alloc::alloc::Global::alloc_impl
+     0.09%  wasmtime  wasmtime           [.] <core::option::Option<T> as core::ops::try_trait::Try>::branch
+     0.09%  wasmtime  [kernel.kallsyms]  [k] ext4_da_reserve_space
+     0.09%  wasmtime  wasmtime           [.] wasmtime_runtime::vmcontext::vm_host_func_context::VMHostFuncContext::host_state
+     0.08%  wasmtime  wasmtime           [.] <&std::fs::File as std::io::Read>::read_vectored
+     0.08%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<wiggle::borrow::InnerBorrowChecker>
+     0.08%  wasmtime  wasmtime           [.] wasm_to_host_trampoline
+     0.08%  wasmtime  wasmtime           [.] <wiggle::wasmtime::WasmtimeGuestMemory as wiggle::GuestMemory>::base
+     0.08%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<std::sync::rwlock::RwLockReadGuard<wasi_common::file::FileCaps>>
+     0.08%  wasmtime  wasmtime           [.] <T as core::convert::Into<U>>::into
+     0.08%  wasmtime  wasmtime           [.] <wasmtime::instance::InstanceData as wasmtime::store::data::StoredData>::list
+     0.08%  wasmtime  wasmtime           [.] tracing::span::Span::log
+     0.08%  wasmtime  wasmtime           [.] wasmtime_jit::instantiate::CompiledModule::module
+     0.08%  wasmtime  wasmtime           [.] wiggle::GuestPtr<T>::cast
+     0.08%  wasmtime  wasmtime           [.] core::result::Result<T,E>::and_then
+     0.08%  wasmtime  wasmtime           [.] std::sys::unix::locks::futex_mutex::Mutex::unlock
+     0.08%  wasmtime  wasmtime           [.] <dyn core::any::Any+core::marker::Send+core::marker::Sync>::is
+     0.08%  wasmtime  [kernel.kallsyms]  [k] create_empty_buffers
+     0.08%  wasmtime  [kernel.kallsyms]  [k] fsnotify
+     0.08%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<alloc::boxed::Box<dyn core::future::future::Future+Output = core::result::Result<u64,wasi_common::snapshots::preview_1::types::Error>+core::marker::Send>>
+     0.08%  wasmtime  wasmtime           [.] <core::ops::control_flow::ControlFlow<B,C> as core::ops::try_trait::Try>::branch
+     0.08%  wasmtime  wasmtime           [.] core::iter::adapters::map::map_try_fold::{{closure}}
+     0.08%  wasmtime  wasmtime           [.] <u32 as wiggle::guest_type::GuestType>::guest_size
+     0.08%  wasmtime  wasmtime           [.] tracing_core::metadata::Metadata::fields
+     0.08%  wasmtime  wasmtime           [.] core::sync::atomic::AtomicUsize::load
+     0.08%  wasmtime  wasmtime           [.] <std::process::ExitStatus as std::sys_common::AsInner<std::sys::unix::process::process_inner::ExitStatus>>::as_inner
+     0.08%  wasmtime  [kernel.kallsyms]  [k] workingset_update_node
+     0.08%  wasmtime  [kernel.kallsyms]  [k] truncate_cleanup_page
+     0.08%  wasmtime  [kernel.kallsyms]  [k] jbd2_journal_grab_journal_head
+     0.07%  wasmtime  [kernel.kallsyms]  [k] _raw_spin_lock_irqsave
+     0.07%  wasmtime  [kernel.kallsyms]  [k] find_get_pages_range_tag
+     0.07%  wasmtime  [kernel.kallsyms]  [k] xas_set_mark
+     0.07%  wasmtime  wasmtime           [.] core::array::<impl core::convert::TryFrom<&[T]> for [T; N]>::try_from
+     0.07%  wasmtime  [kernel.kallsyms]  [k] ext4_es_lookup_extent
+     0.07%  wasmtime  wasmtime           [.] hashbrown::map::HashMap<K,V,S,A>::is_empty
+     0.07%  wasmtime  [kernel.kallsyms]  [k] cshook_systemcalltable_post_writev
+     0.07%  wasmtime  wasmtime           [.] std::sys_common::net::UdpSocket::into_socket
+     0.07%  wasmtime  wasmtime           [.] core::slice::raw::from_raw_parts_mut
+     0.07%  wasmtime  wasmtime           [.] std::panicking::try
+     0.07%  wasmtime  wasmtime           [.] <wasmtime::module::ModuleInner as wasmtime_runtime::ModuleRuntimeInfo>::module
+     0.07%  wasmtime  wasmtime           [.] wiggle::wasmtime::WasmtimeGuestMemory::new
+     0.07%  wasmtime  wasmtime           [.] wiggle::borrow::InnerBorrowChecker::mut_borrow
+     0.07%  wasmtime  [kernel.kallsyms]  [k] jbd2_journal_stop
+     0.07%  wasmtime  wasmtime           [.] core::mem::replace
+     0.07%  wasmtime  wasmtime           [.] core::str::traits::<impl core::cmp::PartialEq for str>::eq
+     0.07%  wasmtime  wasmtime           [.] core::hash::impls::<impl core::hash::Hash for &T>::hash
+     0.07%  wasmtime  wasmtime           [.] std::panic::catch_unwind
+     0.07%  wasmtime  wasmtime           [.] <T as core::convert::Into<U>>::into
+     0.07%  wasmtime  wasmtime           [.] core::sync::atomic::atomic_add
+     0.07%  wasmtime  [kernel.kallsyms]  [k] ext4_da_write_end
+     0.07%  wasmtime  wasmtime           [.] hashbrown::raw::RawTable<T,A>::find
+     0.07%  wasmtime  wasmtime           [.] core::cmp::impls::<impl core::cmp::Ord for usize>::cmp
+     0.07%  wasmtime  wasmtime           [.] wasi_common::snapshots::preview_1::<impl wasi_common::snapshots::preview_1::wasi_snapshot_preview1::WasiSnapshotPreview1 for wasi_common::ctx::WasiCtx>::fd_read
+     0.07%  wasmtime  wasmtime           [.] alloc::vec::Vec<T,A>::extend_desugared
+     0.07%  wasmtime  wasmtime           [.] <core::hash::sip::Hasher<S> as core::hash::Hasher>::write
+     0.07%  wasmtime  wasmtime           [.] alloc::raw_vec::RawVec<T,A>::current_memory
+     0.07%  wasmtime  wasmtime           [.] std::sync::poison::map_result
+     0.07%  wasmtime  [kernel.kallsyms]  [k] __fsnotify_parent
+     0.07%  wasmtime  [kernel.kallsyms]  [k] prep_new_page
+     0.07%  wasmtime  wasmtime           [.] hashbrown::raw::Bucket<T>::to_base_index
+     0.07%  wasmtime  wasmtime           [.] <tracing::instrument::Instrumented<T> as core::future::future::Future>::poll
+     0.07%  wasmtime  wasmtime           [.] <alloc::vec::set_len_on_drop::SetLenOnDrop as core::ops::drop::Drop>::drop
+     0.07%  wasmtime  wasmtime           [.] alloc::alloc::box_free
+     0.07%  wasmtime  wasmtime           [.] alloc::str::<impl core::borrow::Borrow<str> for alloc::string::String>::borrow
+     0.07%  wasmtime  wasmtime           [.] <core::num::nonzero::NonZeroU64 as core::cmp::PartialEq>::eq
+     0.07%  wasmtime  wasmtime           [.] core::cmp::Ord::min
+     0.07%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T,A> as core::ops::deref::Deref>::deref
+     0.07%  wasmtime  wasmtime           [.] <core::ops::range::Range<T> as core::iter::range::RangeIteratorImpl>::spec_next
+     0.07%  wasmtime  wasmtime           [.] wasmtime_cli::commands::run::populate_with_wasi::{{closure}}
+     0.07%  wasmtime  wasmtime           [.] alloc::raw_vec::RawVec<T,A>::current_memory
+     0.07%  wasmtime  wasmtime           [.] wiggle::GuestPtr<[T]>::as_slice_mut
+     0.07%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.07%  wasmtime  wasmtime           [.] <core::hash::sip::Sip13Rounds as core::hash::sip::Sip>::c_rounds
+     0.07%  wasmtime  wasmtime           [.] core::num::<impl usize>::checked_add
+     0.07%  wasmtime  wasmtime           [.] wiggle::borrow::InnerBorrowChecker::new
+     0.07%  wasmtime  wasmtime           [.] <usize as core::slice::index::SliceIndex<[T]>>::get_unchecked
+     0.07%  wasmtime  wasmtime           [.] core::ptr::const_ptr::<impl *const T>::offset_from
+     0.07%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<std::collections::hash::map::HashMap<wiggle::BorrowHandle,wiggle::region::Region>>
+     0.07%  wasmtime  wasmtime           [.] <core::iter::adapters::GenericShunt<I,R> as core::iter::traits::iterator::Iterator>::next
+     0.07%  wasmtime  wasmtime           [.] core::core_arch::x86::sse2::_mm_loadu_si128
+     0.07%  wasmtime  wasmtime           [.] wiggle::UnsafeGuestSlice<T>::as_slice_mut
+     0.07%  wasmtime  wasmtime           [.] <core::ops::range::RangeFrom<usize> as core::slice::index::SliceIndex<[T]>>::get
+     0.07%  wasmtime  wasmtime           [.] std::sync::poison::map_result
+     0.07%  wasmtime  wasmtime           [.] <alloc::alloc::Global as core::alloc::Allocator>::allocate
+     0.07%  wasmtime  wasmtime           [.] core::ptr::mut_ptr::<impl *mut T>::is_null
+     0.07%  wasmtime  wasmtime           [.] std::sys::unix::locks::futex_mutex::Mutex::lock
+     0.07%  wasmtime  wasmtime           [.] <F as wasmtime::func::IntoFunc<T,(wasmtime::func::Caller<T>,A1,A2,A3,A4),R>>::into_func::wasm_to_host_shim
+     0.07%  wasmtime  [kernel.kallsyms]  [k] __block_commit_write.isra.0
+     0.07%  wasmtime  wasmtime           [.] wiggle::run_in_dummy_executor::dummy_waker
+     0.07%  wasmtime  wasmtime           [.] wasmtime_environ::vmoffsets::VMOffsets<P>::vmctx_store
+     0.07%  wasmtime  wasmtime           [.] <wasi_common::ctx::WasiCtx as core::ops::deref::Deref>::deref
+     0.07%  wasmtime  wasmtime           [.] <core::ops::range::Range<usize> as core::slice::index::SliceIndex<[T]>>::get_unchecked
+     0.07%  wasmtime  wasmtime           [.] wiggle::GuestPtr<T>::new
+     0.07%  wasmtime  wasmtime           [.] core::ptr::mut_ptr::<impl *mut T>::is_null
+     0.07%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<alloc::vec::Vec<wiggle::GuestSliceMut<u8>>>
+     0.07%  wasmtime  wasmtime           [.] core::fmt::ArgumentV1::new_display
+     0.07%  wasmtime  wasmtime           [.] io_lifetimes::views::FilelikeView<Target>::view_raw
+     0.07%  wasmtime  wasmtime           [.] alloc::alloc::Global::alloc_impl
+     0.07%  wasmtime  wasmtime           [.] <core::iter::adapters::GenericShunt<I,R> as core::iter::traits::iterator::Iterator>::size_hint
+     0.07%  wasmtime  wasmtime           [.] <F as core::future::into_future::IntoFuture>::into_future
+     0.07%  wasmtime  wasmtime           [.] hashbrown::raw::sse2::Group::match_byte
+     0.07%  wasmtime  [kernel.kallsyms]  [k] PageHuge
+     0.07%  wasmtime  [kernel.kallsyms]  [k] mem_cgroup_charge_statistics
+     0.07%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T> as core::iter::traits::collect::FromIterator<T>>::from_iter
+     0.07%  wasmtime  wasmtime           [.] wiggle::borrow::BorrowChecker::is_mut_borrowed
+     0.07%  wasmtime  wasmtime           [.] hashbrown::map::make_hash
+     0.07%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<tracing::instrument::Instrumented<wasi_common::snapshots::preview_1::wasi_snapshot_preview1::fd_read<wasi_common::ctx::WasiCtx>::{{closure}}>>
+     0.07%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.07%  wasmtime  wasmtime           [.] hashbrown::raw::RawTableInner<A>::prepare_resize
+     0.07%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<io_lifetimes::views::FilelikeView<std::fs::File>>
+     0.07%  wasmtime  wasmtime           [.] core::iter::traits::iterator::Iterator::try_fold
+     0.07%  wasmtime  wasmtime           [.] std::sync::rwlock::RwLockReadGuard<T>::new
+     0.07%  wasmtime  wasmtime           [.] core::ptr::const_ptr::<impl *const T>::offset_from
+     0.07%  wasmtime  [kernel.kallsyms]  [k] __es_remove_extent
+     0.07%  wasmtime  wasmtime           [.] hashbrown::raw::inner::Bucket<T>::as_ref
+     0.07%  wasmtime  wasmtime           [.] core::option::Option<T>::expect
+     0.07%  wasmtime  wasmtime           [.] <core::slice::iter::Iter<T> as core::iter::traits::iterator::Iterator>::size_hint
+     0.07%  wasmtime  [kernel.kallsyms]  [k] unlock_page
+     0.07%  wasmtime  wasmtime           [.] <T as core::convert::TryInto<U>>::try_into
+     0.07%  wasmtime  [kernel.kallsyms]  [k] __pagevec_lru_add_fn
+     0.06%  wasmtime  [kernel.kallsyms]  [k] xas_clear_mark
+     0.06%  wasmtime  wasmtime           [.] core::ptr::mut_ptr::<impl *mut T>::guaranteed_eq
+     0.06%  wasmtime  wasmtime           [.] <std::collections::hash::map::RandomState as core::hash::BuildHasher>::build_hasher
+     0.06%  wasmtime  wasmtime           [.] core::cmp::impls::<impl core::cmp::Ord for usize>::cmp
+     0.06%  wasmtime  wasmtime           [.] core::hash::BuildHasher::hash_one
+     0.06%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<wasi_common::snapshots::preview_1::wasi_snapshot_preview1::fd_write<wasi_common::ctx::WasiCtx>::{{closure}}>
+     0.06%  wasmtime  wasmtime           [.] std::collections::hash::map::HashMap<K,V>::new
+     0.06%  wasmtime  [kernel.kallsyms]  [k] do_iter_write
+     0.06%  wasmtime  wasmtime           [.] wiggle::run_in_dummy_executor::dummy_waker::clone
+     0.06%  wasmtime  wasmtime           [.] core::cmp::impls::<impl core::cmp::PartialOrd for u32>::lt
+     0.06%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.06%  wasmtime  [kernel.kallsyms]  [k] __inc_node_state
+     0.06%  wasmtime  wasmtime           [.] <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::try_fold
+     0.06%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<hashbrown::map::HashMap<wiggle::BorrowHandle,wiggle::region::Region,std::collections::hash::map::RandomState>>
+     0.06%  wasmtime  [kernel.kallsyms]  [k] _raw_read_lock
+     0.06%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T,A> as core::ops::index::Index<I>>::index
+     0.06%  wasmtime  wasmtime           [.] core::ptr::mut_ptr::<impl *mut T>::is_null
+     0.06%  wasmtime  wasmtime           [.] <T as core::any::Any>::type_id
+     0.06%  wasmtime  wasmtime           [.] core::ptr::mut_ptr::<impl *mut T>::is_null
+     0.06%  wasmtime  wasmtime           [.] core::core_arch::x86::sse2::_mm_set_epi8
+     0.06%  wasmtime  wasmtime           [.] hashbrown::map::HashMap<K,V,S,A>::iter
+     0.06%  wasmtime  wasmtime           [.] core::convert::num::ptr_try_from_impls::<impl core::convert::TryFrom<u32> for usize>::try_from
+     0.06%  wasmtime  wasmtime           [.] wasmtime::types::MemoryType::is_shared
+     0.06%  wasmtime  [kernel.kallsyms]  [k] __dquot_alloc_space
+     0.06%  wasmtime  wasmtime           [.] indexmap::map::IndexMap<K,V,S>::get_full
+     0.06%  wasmtime  wasmtime           [.] <alloc::raw_vec::RawVec<T,A> as core::ops::drop::Drop>::drop
+     0.06%  wasmtime  wasmtime           [.] core::sync::atomic::AtomicBool::load
+     0.06%  wasmtime  wasmtime           [.] wiggle::GuestPtr<[T]>::iter
+     0.06%  wasmtime  wasmtime           [.] <wasi_common::snapshots::preview_1::types::Ciovec as wiggle::guest_type::GuestType>::read
+     0.06%  wasmtime  wasmtime           [.] hashbrown::raw::Bucket<T>::as_ref
+     0.06%  wasmtime  wasmtime           [.] wiggle::GuestPtr<T>::new
+     0.06%  wasmtime  wasmtime           [.] wasi_common::file::FileEntry::capable_of
+     0.06%  wasmtime  wasmtime           [.] core::mem::replace
+     0.06%  wasmtime  [kernel.kallsyms]  [k] shmem_mapping
+     0.06%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<std::sync::rwlock::RwLockReadGuard<wasi_common::table::Inner>>
+     0.06%  wasmtime  wasmtime           [.] <std::collections::hash::map::DefaultHasher as core::hash::Hasher>::finish
+     0.06%  wasmtime  wasmtime           [.] std::thread::local::lazy::LazyKeyInner<T>::get
+     0.06%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<alloc::boxed::Box<wasmtime_wasi::sync::snapshots::preview_1::add_wasi_snapshot_preview1_to_linker<wasmtime_cli::commands::run::Host,wasi_common::ctx::WasiCtx,wasmtime_cli::commands::run::populate_with_wasi::{{closure}}>::{{closure}}::{{closure}}>>
+     0.06%  wasmtime  wasmtime           [.] <core::result::Result<T,anyhow::Error> as wasmtime::func::WasmRet>::into_abi_for_ret
+     0.06%  wasmtime  wasmtime           [.] <std::collections::hash::map::RandomState as core::default::Default>::default
+     0.06%  wasmtime  wasmtime           [.] wasmtime_runtime::vmcontext::VMContext::instance
+     0.06%  wasmtime  wasmtime           [.] <alloc::alloc::Global as core::clone::Clone>::clone
+     0.06%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.06%  wasmtime  wasmtime           [.] core::core_arch::x86::sse2::_mm_cmpeq_epi8
+     0.06%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T,A> as core::ops::deref::Deref>::deref
+     0.06%  wasmtime  wasmtime           [.] <Q as indexmap::equivalent::Equivalent<K>>::equivalent
+     0.06%  wasmtime  wasmtime           [.] wasmtime::store::context::StoreContextMut<T>::from_raw
+     0.06%  wasmtime  wasmtime           [.] wasmtime::func::Caller<T>::sub_caller
+     0.06%  wasmtime  wasmtime           [.] alloc::sync::Arc<T>::from_inner
+     0.06%  wasmtime  wasmtime           [.] <hashbrown::raw::inner::bitmask::BitMask as core::iter::traits::collect::IntoIterator>::into_iter
+     0.06%  wasmtime  wasmtime           [.] <std::collections::hash::map::DefaultHasher as core::hash::Hasher>::write
+     0.06%  wasmtime  wasmtime           [.] <<alloc::vec::into_iter::IntoIter<T,A> as core::ops::drop::Drop>::drop::DropGuard<T,A> as core::ops::drop::Drop>::drop
+     0.06%  wasmtime  wasmtime           [.] core::sync::atomic::AtomicBool::load
+     0.06%  wasmtime  wasmtime           [.] wiggle::GuestPtr<T>::mem
+     0.06%  wasmtime  wasmtime           [.] alloc::alloc::box_free
+     0.06%  wasmtime  [kernel.kallsyms]  [k] rw_verify_area
+     0.06%  wasmtime  [kernel.kallsyms]  [k] ext4_inode_csum_set
+     0.06%  wasmtime  wasmtime           [.] alloc::raw_vec::RawVec<T,A>::allocate_in
+     0.06%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<core::option::Option<core::result::Result<u64,wasi_common::snapshots::preview_1::types::Error>>>
+     0.06%  wasmtime  wasmtime           [.] <std::sync::mutex::MutexGuard<T> as core::ops::deref::DerefMut>::deref_mut
+     0.06%  wasmtime  wasmtime           [.] <core::iter::adapters::GenericShunt<I,R> as core::iter::traits::iterator::Iterator>::try_fold
+     0.06%  wasmtime  wasmtime           [.] <alloc::alloc::Global as core::alloc::Allocator>::deallocate
+     0.06%  wasmtime  wasmtime           [.] core::core_arch::x86::sse2::_mm_loadu_si128
+     0.06%  wasmtime  wasmtime           [.] alloc::raw_vec::RawVec<T,A>::allocate_in
+     0.06%  wasmtime  wasmtime           [.] <u32 as wiggle::guest_type::GuestType>::read
+     0.06%  wasmtime  [kernel.kallsyms]  [k] balance_dirty_pages_ratelimited
+     0.06%  wasmtime  [kernel.kallsyms]  [k] ext4_block_write_begin
+     0.06%  wasmtime  wasmtime           [.] hashbrown::raw::TableLayout::new
+     0.06%  wasmtime  wasmtime           [.] hashbrown::raw::RawTable<T,A>::get
+     0.06%  wasmtime  wasmtime           [.] <wasi_common::table::Table as wasi_common::file::TableFileExt>::get_file
+     0.06%  wasmtime  wasmtime           [.] alloc::boxed::<impl core::convert::From<alloc::boxed::Box<T,A>> for core::pin::Pin<alloc::boxed::Box<T,A>>>::from
+     0.06%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.06%  wasmtime  wasmtime           [.] std::sys::unix::locks::futex_rwlock::RwLock::read_unlock
+     0.06%  wasmtime  wasmtime           [.] alloc::raw_vec::RawVec<T,A>::current_memory
+     0.06%  wasmtime  wasmtime           [.] <io_lifetimes::views::FilelikeView<Target> as core::ops::drop::Drop>::drop
+     0.06%  wasmtime  wasmtime           [.] alloc::boxed::<impl core::convert::From<alloc::boxed::Box<T,A>> for core::pin::Pin<alloc::boxed::Box<T,A>>>::from
+     0.06%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<core::iter::traits::iterator::Iterator::for_each::call<std::io::IoSlice,alloc::vec::Vec<std::io::IoSlice>::extend_trusted<core::iter::adapters::map::Map<core::slice::iter::Iter<wiggle::GuestCow<u8>>,wasi_common::snapshots::preview_1::<impl wasi_common::snapshots::preview_1::wasi_snapshot_preview1::WasiSnapshotPreview1 for wasi_common::ctx::WasiCtx>::fd_write::{{closure}}::{{closure}}>>::{{closure}}>::{{closure}}>
+     0.06%  wasmtime  wasmtime           [.] <core::ops::range::Range<T> as core::iter::range::RangeIteratorImpl>::spec_next
+     0.06%  wasmtime  wasmtime           [.] <T as wasmtime::func::WasmRet>::into_abi_for_ret
+     0.06%  wasmtime  wasmtime           [.] tracing_core::subscriber::Interest::never
+     0.06%  wasmtime  wasmtime           [.] <wasi_cap_std_sync::file::File as wasi_common::file::WasiFile>::read_vectored
+     0.06%  wasmtime  [kernel.kallsyms]  [k] ext4_mark_iloc_dirty
+     0.06%  wasmtime  wasmtime           [.] sha2::sha256::soft::sha256load
+     0.06%  wasmtime  wasmtime           [.] tracing_core::field::FieldSet::iter
+     0.06%  wasmtime  [kernel.kallsyms]  [k] __sb_start_write
+     0.06%  wasmtime  wasmtime           [.] <core::result::Result<V,E> as core::iter::traits::collect::FromIterator<core::result::Result<A,E>>>::from_iter
+     0.06%  wasmtime  wasmtime           [.] <alloc::boxed::Box<T,A> as core::ops::deref::DerefMut>::deref_mut
+     0.06%  wasmtime  wasmtime           [.] wasmtime_runtime::vmcontext::VMMemoryDefinition::current_length
+     0.06%  wasmtime  wasmtime           [.] indexmap::map::IndexMap<K,V,S>::get_index_of
+     0.06%  wasmtime  [kernel.kallsyms]  [k] __inc_node_page_state
+     0.06%  wasmtime  wasmtime           [.] tracing_core::metadata::Metadata::level
+     0.06%  wasmtime  [kernel.kallsyms]  [k] ext4_es_can_be_merged
+     0.06%  wasmtime  wasmtime           [.] core::task::wake::Context::from_waker
+     0.06%  wasmtime  wasmtime           [.] <hashbrown::scopeguard::ScopeGuard<T,F> as core::ops::drop::Drop>::drop
+     0.06%  wasmtime  wasmtime           [.] wiggle::validate_size_align::{{closure}}
+     0.06%  wasmtime  wasmtime           [.] core::ops::control_flow::ControlFlow<B,C>::break_value
+     0.06%  wasmtime  wasmtime           [.] <wasmtime::memory::Memory as core::clone::Clone>::clone
+     0.06%  wasmtime  [kernel.kallsyms]  [k] generic_file_buffered_read
+     0.06%  wasmtime  wasmtime           [.] core::array::<impl core::convert::TryFrom<&[T]> for &[T; N]>::try_from
+     0.06%  wasmtime  wasmtime           [.] core::ptr::mut_ptr::<impl *mut T>::is_null
+     0.06%  wasmtime  [kernel.kallsyms]  [k] find_get_entries
+     0.05%  wasmtime  [kernel.kallsyms]  [k] memset_erms
+     0.05%  wasmtime  [kernel.kallsyms]  [k] filemap_map_pages
+     0.05%  wasmtime  wasmtime           [.] <core::slice::iter::IterMut<T> as core::iter::traits::iterator::Iterator>::__iterator_get_unchecked
+     0.05%  wasmtime  [kernel.kallsyms]  [k] __getblk_gfp
+     0.05%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.05%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T,A> as core::ops::drop::Drop>::drop
+     0.05%  wasmtime  wasmtime           [.] hashbrown::raw::RawTableInner<A>::new_uninitialized
+     0.05%  wasmtime  wasmtime           [.] core::iter::traits::iterator::Iterator::collect
+     0.05%  wasmtime  wasmtime           [.] core::any::TypeId::of
+     0.05%  wasmtime  wasmtime           [.] wasmtime_runtime::instance::InstanceHandle::from_vmctx
+     0.05%  wasmtime  [kernel.kallsyms]  [k] __x64_sys_writev
+     0.05%  wasmtime  wasmtime           [.] <T as core::convert::Into<U>>::into
+     0.05%  wasmtime  wasmtime           [.] hashbrown::map::HashMap<K,V,S,A>::get
+     0.05%  wasmtime  [kernel.kallsyms]  [k] ext4_nonda_switch
+     0.05%  wasmtime  wasmtime           [.] wiggle::GuestPtr<T>::mem
+     0.05%  wasmtime  wasmtime           [.] hashbrown::raw::inner::RawTable<T,A>::find
+     0.05%  wasmtime  wasmtime           [.] <T as system_interface::io::io_ext::IoExt>::write_vectored
+     0.05%  wasmtime  wasmtime           [.] hashbrown::map::HashMap<K,V,S>::with_hasher
+     0.05%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<alloc::vec::set_len_on_drop::SetLenOnDrop>
+     0.05%  wasmtime  wasmtime           [.] hashbrown::map::HashMap<K,V,S,A>::remove_entry
+     0.05%  wasmtime  wasmtime           [.] <std::os::fd::owned::OwnedFd as core::convert::From<std::fs::File>>::from
+     0.05%  wasmtime  wasmtime           [.] core::iter::traits::iterator::Iterator::try_fold
+     0.05%  wasmtime  wasmtime           [.] core::iter::traits::iterator::Iterator::try_fold
+     0.05%  wasmtime  wasmtime           [.] <wasmtime_runtime::export::ExportMemory as wasmtime::store::data::StoredData>::list
+     0.05%  wasmtime  [kernel.kallsyms]  [k] __set_page_dirty
+     0.05%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<alloc::boxed::Box<wasmtime_wasi::sync::snapshots::preview_1::add_wasi_snapshot_preview1_to_linker<wasmtime_cli::commands::run::Host,wasi_common::ctx::WasiCtx,wasmtime_cli::commands::run::populate_with_wasi::{{closure}}>::{{closure}}::{{closure}}>>
+     0.05%  wasmtime  [JIT] tid 3051082  [.] 0x00007fa389b8bf69
+     0.05%  wasmtime  wasmtime           [.] <core::result::Result<T,anyhow::Error> as wasmtime::func::WasmRet>::compatible_with_store
+     0.05%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<<alloc::vec::into_iter::IntoIter<T,A> as core::ops::drop::Drop>::drop::DropGuard<wiggle::GuestPtr<[u8]>,alloc::alloc::Global>>
+     0.05%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<[wiggle::GuestSliceMut<u8>]>
+     0.05%  wasmtime  wasmtime           [.] <hashbrown::map::Iter<K,V> as core::iter::traits::iterator::Iterator>::next
+     0.05%  wasmtime  wasmtime           [.] <std::os::fd::owned::OwnedFd as std::os::fd::raw::IntoRawFd>::into_raw_fd
+     0.05%  wasmtime  [kernel.kallsyms]  [k] __es_insert_extent
+     0.05%  wasmtime  wasmtime           [.] <alloc::raw_vec::RawVec<T,A> as core::ops::drop::Drop>::drop
+     0.05%  wasmtime  wasmtime           [.] <core::ops::control_flow::ControlFlow<B,C> as core::ops::try_trait::FromResidual>::from_residual
+     0.05%  wasmtime  wasmtime           [.] core::future::identity_future
+     0.05%  wasmtime  wasmtime           [.] core::result::Result<T,E>::unwrap
+     0.05%  wasmtime  wasmtime           [.] <core::ops::range::Range<T> as core::iter::range::RangeIteratorImpl>::spec_next
+     0.05%  wasmtime  wasmtime           [.] <core::task::wake::Waker as core::ops::drop::Drop>::drop
+     0.05%  wasmtime  wasmtime           [.] <alloc::boxed::Box<T,A> as core::ops::deref::DerefMut>::deref_mut
+     0.05%  wasmtime  wasmtime           [.] <dyn core::any::Any+core::marker::Send+core::marker::Sync>::is
+     0.05%  wasmtime  wasmtime           [.] core::result::Result<T,E>::map_err
+     0.05%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<wiggle::wasmtime::WasmtimeGuestMemory>
+     0.05%  wasmtime  wasmtime           [.] <core::option::Option<T> as core::ops::try_trait::Try>::branch
+     0.05%  wasmtime  wasmtime           [.] <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::fold
+     0.05%  wasmtime  wasmtime           [.] <wiggle::GuestCow<T> as core::ops::deref::Deref>::deref
+     0.05%  wasmtime  wasmtime           [.] core::iter::traits::iterator::Iterator::fold
+     0.05%  wasmtime  wasmtime           [.] core::slice::<impl [T]>::align_to
+     0.05%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<tracing::instrument::Instrumented<wasi_common::snapshots::preview_1::wasi_snapshot_preview1::fd_write<wasi_common::ctx::WasiCtx>::{{closure}}>>
+     0.05%  wasmtime  wasmtime           [.] <core::iter::adapters::GenericShunt<I,R> as core::iter::traits::iterator::Iterator>::size_hint
+     0.05%  wasmtime  wasmtime           [.] <core::result::Result<V,E> as core::iter::traits::collect::FromIterator<core::result::Result<A,E>>>::from_iter::{{closure}}
+     0.05%  wasmtime  wasmtime           [.] hashbrown::raw::RawTableInner<A>::free_buckets
+     0.05%  wasmtime  wasmtime           [.] core::sync::atomic::AtomicUsize::load
+     0.05%  wasmtime  wasmtime           [.] <wasmtime_types::Memory as core::clone::Clone>::clone
+     0.05%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T> as alloc::vec::spec_from_iter_nested::SpecFromIterNested<T,I>>::from_iter
+     0.05%  wasmtime  wasmtime           [.] std::panicking::panic_count::count_is_zero
+     0.05%  wasmtime  wasmtime           [.] hashbrown::map::HashMap<K,V,S,A>::len
+     0.05%  wasmtime  wasmtime           [.] <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::try_fold
+     0.05%  wasmtime  wasmtime           [.] <wiggle::wasmtime::WasmtimeGuestMemory as wiggle::GuestMemory>::mut_unborrow
+     0.05%  wasmtime  wasmtime           [.] wiggle::GuestPtr<T>::read
+     0.05%  wasmtime  wasmtime           [.] std::io::IoSliceMut::new
+     0.05%  wasmtime  wasmtime           [.] wiggle::GuestPtr<T>::cast
+     0.05%  wasmtime  wasmtime           [.] core::convert::num::<impl core::convert::TryFrom<u64> for u32>::try_from
+     0.05%  wasmtime  wasmtime           [.] <core::iter::adapters::GenericShunt<I,R> as core::iter::traits::iterator::Iterator>::try_fold::{{closure}}
+     0.05%  wasmtime  wasmtime           [.] core::sync::atomic::atomic_load
+     0.05%  wasmtime  [kernel.kallsyms]  [k] ext4_file_read_iter
+     0.05%  wasmtime  wasmtime           [.] <core::ops::control_flow::ControlFlow<B,C> as core::ops::try_trait::Try>::branch
+     0.05%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<alloc::raw_vec::RawVec<wiggle::GuestSliceMut<u8>>>
+     0.05%  wasmtime  [kernel.kallsyms]  [k] copyout
+     0.05%  wasmtime  [kernel.kallsyms]  [k] __inc_numa_state
+     0.05%  wasmtime  wasmtime           [.] <T as core::option::SpecOptionPartialEq>::eq
+     0.05%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<core::option::Option<core::result::Result<u32,wasi_common::snapshots::preview_1::types::Error>>>
+     0.05%  wasmtime  wasmtime           [.] wiggle::GuestPtr<T>::write
+     0.05%  wasmtime  wasmtime           [.] std::collections::hash::map::HashMap<K,V,S>::values
+     0.05%  wasmtime  wasmtime           [.] core::future::identity_future
+     0.05%  wasmtime  wasmtime           [.] core::hash::impls::<impl core::hash::Hash for str>::hash
+     0.05%  wasmtime  [kernel.kallsyms]  [k] fput_many
+     0.05%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<wasmtime_wasi::sync::snapshots::preview_1::add_wasi_snapshot_preview1_to_linker<wasmtime_cli::commands::run::Host,wasi_common::ctx::WasiCtx,wasmtime_cli::commands::run::populate_with_wasi::{{closure}}>::{{closure}}::{{closure}}>
+     0.05%  wasmtime  wasmtime           [.] hashbrown::map::HashMap<K,V,S,A>::get_inner
+     0.05%  wasmtime  wasmtime           [.] <core::panic::unwind_safe::AssertUnwindSafe<F> as core::ops::function::FnOnce<()>>::call_once
+     0.05%  wasmtime  wasmtime           [.] <u32 as core::iter::range::Step>::forward_unchecked
+     0.05%  wasmtime  [kernel.kallsyms]  [k] policy_node
+     0.05%  wasmtime  wasmtime           [.] core::cmp::impls::<impl core::cmp::PartialOrd for u32>::lt
+     0.05%  wasmtime  [kernel.kallsyms]  [k] mem_cgroup_track_foreign_dirty_slowpath
+     0.05%  wasmtime  wasmtime           [.] hashbrown::raw::RawTable<T,A>::drop_elements
+     0.05%  wasmtime  [kernel.kallsyms]  [k] jbd2__journal_start
+     0.05%  wasmtime  wasmtime           [.] core::ptr::const_ptr::<impl *const T>::sub_ptr
+     0.05%  wasmtime  wasmtime           [.] core::ptr::const_ptr::<impl *const T>::is_null
+     0.05%  wasmtime  [kernel.kallsyms]  [k] iov_iter_copy_from_user_atomic
+     0.05%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<core::iter::adapters::map::map_fold<&mut wiggle::GuestSliceMut<u8>,std::io::IoSliceMut,(),wasi_common::snapshots::preview_1::<impl wasi_common::snapshots::preview_1::wasi_snapshot_preview1::WasiSnapshotPreview1 for wasi_common::ctx::WasiCtx>::fd_read::{{closure}}::{{closure}},core::iter::traits::iterator::Iterator::for_each::call<std::io::IoSliceMut,alloc::vec::Vec<std::io::IoSliceMut>::extend_trusted<core::iter::adapters::map::Map<core::slice::iter::IterMut<wiggle::GuestSliceMut<u8>>,wasi_common::snapshots::preview_1::<impl wasi_common::snapshots::preview_1::wasi_snapshot_preview1::WasiSnapshotPreview1 for wasi_common::ctx::WasiCtx>::fd_read::{{closure}}::{{closure}}>>::{{closure}}>::{{closure}}>::{{closure}}>
+     0.05%  wasmtime  [kernel.kallsyms]  [k] dput
+     0.05%  wasmtime  wasmtime           [.] <usize as core::slice::index::SliceIndex<[T]>>::index
+     0.05%  wasmtime  wasmtime           [.] <core::option::Option<T> as core::ops::try_trait::Try>::branch
+     0.05%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T> as core::iter::traits::collect::FromIterator<T>>::from_iter
+     0.05%  wasmtime  wasmtime           [.] malloc@plt
+     0.05%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<wasi_common::snapshots::preview_1::<impl wasi_common::snapshots::preview_1::wasi_snapshot_preview1::WasiSnapshotPreview1 for wasi_common::ctx::WasiCtx>::fd_read::{{closure}}>
+     0.05%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<core::result::Result<(),anyhow::Error>>
+     0.05%  wasmtime  wasmtime           [.] core::slice::iter::Iter<T>::new
+     0.05%  wasmtime  wasmtime           [.] core::cmp::impls::<impl core::cmp::Ord for usize>::cmp
+     0.05%  wasmtime  wasmtime           [.] core::core_arch::x86::sse2::_mm_movemask_epi8
+     0.05%  wasmtime  wasmtime           [.] core::iter::adapters::map::map_try_fold::{{closure}}
+     0.05%  wasmtime  wasmtime           [.] <core::hash::sip::Hasher<S> as core::hash::Hasher>::write
+     0.05%  wasmtime  wasmtime           [.] <wasi_common::snapshots::preview_1::types::Iovec as wiggle::guest_type::GuestType>::read
+     0.05%  wasmtime  [kernel.kallsyms]  [k] __page_cache_alloc
+     0.05%  wasmtime  wasmtime           [.] <core::iter::adapters::zip::Zip<A,B> as core::iter::traits::iterator::Iterator>::next
+     0.05%  wasmtime  wasmtime           [.] alloc::vec::in_place_collect::<impl alloc::vec::spec_from_iter::SpecFromIter<T,I> for alloc::vec::Vec<T>>::from_iter
+     0.05%  wasmtime  wasmtime           [.] <alloc::alloc::Global as core::alloc::Allocator>::deallocate
+     0.05%  wasmtime  wasmtime           [.] std::thread::local::LocalKey<T>::try_with
+     0.05%  wasmtime  wasmtime           [.] alloc::boxed::Box<T,A>::into_pin
+     0.05%  wasmtime  wasmtime           [.] __rust_alloc
+     0.05%  wasmtime  wasmtime           [.] alloc::raw_vec::RawVec<T,A>::allocate_in
+     0.05%  wasmtime  [kernel.kallsyms]  [k] __ext4_handle_dirty_metadata
+     0.05%  wasmtime  wasmtime           [.] <dyn core::any::Any>::downcast_ref
+     0.05%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<alloc::raw_vec::RawVec<wiggle::GuestPtr<[u8]>>>
+     0.05%  wasmtime  [kernel.kallsyms]  [k] _copy_from_user
+     0.05%  wasmtime  wasmtime           [.] core::future::identity_future
+     0.05%  wasmtime  wasmtime           [.] alloc::raw_vec::RawVec<T,A>::allocate_in
+     0.05%  wasmtime  wasmtime           [.] core::result::Result<T,E>::map_err
+     0.05%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<wasmtime_wasi::sync::snapshots::preview_1::add_wasi_snapshot_preview1_to_linker<wasmtime_cli::commands::run::Host,wasi_common::ctx::WasiCtx,wasmtime_cli::commands::run::populate_with_wasi::{{closure}}>::{{closure}}::{{closure}}>
+     0.05%  wasmtime  [kernel.kallsyms]  [k] __lru_cache_add
+     0.05%  wasmtime  wasmtime           [.] <T as core::any::Any>::type_id
+     0.05%  wasmtime  wasmtime           [.] core::ops::control_flow::ControlFlow<B,C>::break_value
+     0.05%  wasmtime  wasmtime           [.] core::slice::<impl [T]>::split_at
+     0.05%  wasmtime  wasmtime           [.] <core::ptr::non_null::NonNull<T> as core::convert::From<core::ptr::unique::Unique<T>>>::from
+     0.05%  wasmtime  [kernel.kallsyms]  [k] cshook_systemcalltable_pre_readv
+     0.05%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T,A> as core::ops::deref::Deref>::deref
+     0.05%  wasmtime  wasmtime           [.] hashbrown::raw::capacity_to_buckets
+     0.05%  wasmtime  wasmtime           [.] alloc::boxed::Box<T,A>::into_pin
+     0.05%  wasmtime  wasmtime           [.] wasi_common::snapshots::preview_1::<impl wiggle::guest_type::GuestErrorType for wasi_common::snapshots::preview_1::types::Errno>::success
+     0.05%  wasmtime  wasmtime           [.] <core::core_arch::x86::__m128i as core::core_arch::x86::m128iExt>::as_m128i
+     0.05%  wasmtime  wasmtime           [.] wiggle::UnsafeGuestSlice<T>::mut_borrow
+     0.05%  wasmtime  [kernel.kallsyms]  [k] rw_copy_check_uvector
+     0.05%  wasmtime  [kernel.kallsyms]  [k] delete_from_page_cache_batch
+     0.05%  wasmtime  [kernel.kallsyms]  [k] unaccount_page_cache_page
+     0.04%  wasmtime  wasmtime           [.] core::ptr::const_ptr::<impl *const T>::is_null
+     0.04%  wasmtime  [kernel.kallsyms]  [k] mpage_map_and_submit_buffers
+     0.04%  wasmtime  [kernel.kallsyms]  [k] page_mapping
+     0.04%  wasmtime  wasmtime           [.] core::sync::atomic::atomic_sub
+     0.04%  wasmtime  [kernel.kallsyms]  [k] add_transaction_credits
+     0.04%  wasmtime  [kernel.kallsyms]  [k] inc_zone_page_state
+     0.04%  wasmtime  wasmtime           [.] core::iter::adapters::map::Map<I,F>::new
+     0.04%  wasmtime  wasmtime           [.] tracing::instrument::Instrument::instrument
+     0.04%  wasmtime  [kernel.kallsyms]  [k] path_get
+     0.04%  wasmtime  wasmtime           [.] <F as core::future::into_future::IntoFuture>::into_future
+     0.04%  wasmtime  [kernel.kallsyms]  [k] __find_get_block
+     0.04%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<wasi_common::snapshots::preview_1::<impl wasi_common::snapshots::preview_1::wasi_snapshot_preview1::WasiSnapshotPreview1 for wasi_common::ctx::WasiCtx>::fd_write::{{closure}}>
+     0.04%  wasmtime  wasmtime           [.] <indexmap::map::core::IndexMapCore<K,V> as indexmap::Entries>::as_entries
+     0.04%  wasmtime  wasmtime           [.] wiggle::GuestPtr<T>::cast
+     0.04%  wasmtime  wasmtime           [.] alloc::raw_vec::RawVec<T,A>::reserve
+     0.04%  wasmtime  wasmtime           [.] alloc::vec::Vec<T,A>::extend_desugared
+     0.04%  wasmtime  [kernel.kallsyms]  [k] rb_next
+     0.04%  wasmtime  wasmtime           [.] <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::fold
+     0.04%  wasmtime  wasmtime           [.] wasmtime::store::data::Stored<T>::index
+     0.04%  wasmtime  wasmtime           [.] core::ops::control_flow::ControlFlow::Break
+     0.04%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T> as core::iter::traits::collect::FromIterator<T>>::from_iter
+     0.04%  wasmtime  wasmtime           [.] core::num::<impl u32>::checked_add
+     0.04%  wasmtime  wasmtime           [.] <I as core::iter::traits::collect::IntoIterator>::into_iter
+     0.04%  wasmtime  wasmtime           [.] core::slice::<impl [T]>::get
+     0.04%  wasmtime  wasmtime           [.] core::option::Option<T>::and_then
+     0.04%  wasmtime  wasmtime           [.] std::sync::poison::Flag::borrow
+     0.04%  wasmtime  wasmtime           [.] <wiggle::wasmtime::WasmtimeGuestMemory as wiggle::GuestMemory>::is_shared_memory
+     0.04%  wasmtime  wasmtime           [.] alloc::alloc::exchange_malloc
+     0.04%  wasmtime  wasmtime           [.] core::result::Result<T,E>::expect
+     0.04%  wasmtime  wasmtime           [.] core::ops::control_flow::ControlFlow<R,<R as core::ops::try_trait::Try>::Output>::into_try
+     0.04%  wasmtime  wasmtime           [.] hashbrown::raw::sse2::Group::match_byte
+     0.04%  wasmtime  wasmtime           [.] core::core_arch::x86::sse2::_mm_loadu_si128
+     0.04%  wasmtime  [kernel.kallsyms]  [k] vfs_writev
+     0.04%  wasmtime  wasmtime           [.] <alloc::boxed::Box<T,A> as core::ops::deref::DerefMut>::deref_mut
+     0.04%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<alloc::boxed::Box<dyn core::future::future::Future+Output = core::result::Result<u32,wasi_common::snapshots::preview_1::types::Error>+core::marker::Send>>
+     0.04%  wasmtime  wasmtime           [.] std::sync::poison::map_result
+     0.04%  wasmtime  wasmtime           [.] wasmtime::store::<impl wasmtime::store::context::StoreContextMut<T>>::data_mut
+     0.04%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.04%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<core::pin::Pin<alloc::boxed::Box<dyn core::future::future::Future+Output = core::result::Result<u64,wasi_common::snapshots::preview_1::types::Error>+core::marker::Send>>>
+     0.04%  wasmtime  wasmtime           [.] <core::core_arch::x86::__m128i as core::core_arch::x86::m128iExt>::as_m128i
+     0.04%  wasmtime  wasmtime           [.] wasi_common::snapshots::preview_1::types::<impl core::convert::From<wasi_common::snapshots::preview_1::types::Fd> for u32>::from
+     0.04%  wasmtime  wasmtime           [.] core::hash::impls::<impl core::hash::Hash for u32>::hash
+     0.04%  wasmtime  [kernel.kallsyms]  [k] current_time
+     0.04%  wasmtime  wasmtime           [.] core::mem::manually_drop::ManuallyDrop<T>::take
+     0.04%  wasmtime  wasmtime           [.] core::sync::atomic::atomic_sub
+     0.04%  wasmtime  wasmtime           [.] std::collections::hash::map::HashMap<K,V,S>::iter
+     0.04%  wasmtime  wasmtime           [.] wasmtime_wasi::sync::snapshots::preview_1::add_wasi_snapshot_preview1_to_linker::{{closure}}
+     0.04%  wasmtime  [kernel.kallsyms]  [k] wait_for_stable_page
+     0.04%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T> as alloc::vec::spec_from_iter::SpecFromIter<T,I>>::from_iter
+     0.04%  wasmtime  wasmtime           [.] core::num::<impl u32>::checked_mul
+     0.04%  wasmtime  wasmtime           [.] <std::sync::rwlock::RwLockReadGuard<T> as core::ops::drop::Drop>::drop
+     0.04%  wasmtime  wasmtime           [.] std::os::fd::owned::<impl core::convert::From<std::os::fd::owned::OwnedFd> for std::fs::File>::from
+     0.04%  wasmtime  wasmtime           [.] wasi_common::snapshots::preview_1::<impl wasi_common::snapshots::preview_1::wasi_snapshot_preview1::WasiSnapshotPreview1 for wasi_common::ctx::WasiCtx>::fd_write
+     0.04%  wasmtime  wasmtime           [.] tracing_core::field::ValueSet::is_empty::{{closure}}
+     0.04%  wasmtime  wasmtime           [.] <core::ops::control_flow::ControlFlow<B,C> as core::ops::try_trait::Try>::branch
+     0.04%  wasmtime  [kernel.kallsyms]  [k] ktime_get_coarse_real_ts64
+     0.04%  wasmtime  wasmtime           [.] tracing_core::span::Record::new
+     0.04%  wasmtime  wasmtime           [.] core::ops::control_flow::ControlFlow<R,<R as core::ops::try_trait::Try>::Output>::into_try
+     0.04%  wasmtime  wasmtime           [.] core::result::Result<T,E>::unwrap
+     0.04%  wasmtime  wasmtime           [.] indexmap::map::core::equivalent::{{closure}}
+     0.04%  wasmtime  wasmtime           [.] <core::slice::iter::Iter<T> as core::iter::traits::iterator::Iterator>::next
+     0.04%  wasmtime  wasmtime           [.] <core::iter::adapters::GenericShunt<I,R> as core::iter::traits::iterator::Iterator>::try_fold::{{closure}}
+     0.04%  wasmtime  wasmtime           [.] core::option::Option<T>::ok_or_else
+     0.04%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.04%  wasmtime  wasmtime           [.] tracing_core::field::ValueSet::is_empty
+     0.04%  wasmtime  wasmtime           [.] wiggle::GuestPtr<T>::as_array
+     0.04%  wasmtime  [kernel.kallsyms]  [k] __es_tree_search.isra.0
+     0.04%  wasmtime  wasmtime           [.] <core::result::Result<V,E> as core::iter::traits::collect::FromIterator<core::result::Result<A,E>>>::from_iter
+     0.04%  wasmtime  wasmtime           [.] <alloc::vec::into_iter::IntoIter<T,A> as core::ops::drop::Drop>::drop
+     0.04%  wasmtime  wasmtime           [.] core::cmp::impls::<impl core::cmp::PartialEq for usize>::eq
+     0.04%  wasmtime  wasmtime           [.] wiggle::GuestPtr<T>::new
+     0.04%  wasmtime  wasmtime           [.] alloc::raw_vec::RawVec<T,A>::needs_to_grow
+     0.04%  wasmtime  wasmtime           [.] <alloc::vec::into_iter::IntoIter<T,A> as core::iter::traits::iterator::Iterator>::size_hint
+     0.04%  wasmtime  wasmtime           [.] <alloc::sync::Arc<T> as core::clone::Clone>::clone
+     0.04%  wasmtime  wasmtime           [.] core::ops::function::FnOnce::call_once
+     0.04%  wasmtime  wasmtime           [.] <i32 as wasmtime::func::typed::WasmTy>::from_abi
+     0.04%  wasmtime  wasmtime           [.] core::ops::control_flow::ControlFlow<R,<R as core::ops::try_trait::Try>::Output>::from_try
+     0.04%  wasmtime  wasmtime           [.] core::slice::<impl [T]>::iter
+     0.04%  wasmtime  [kernel.kallsyms]  [k] should_failslab
+     0.04%  wasmtime  [kernel.kallsyms]  [k] __fget_light
+     0.04%  wasmtime  wasmtime           [.] core::cmp::PartialEq::ne
+     0.04%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T> as core::iter::traits::collect::FromIterator<T>>::from_iter
+     0.04%  wasmtime  wasmtime           [.] indexmap::map::IndexMap<K,V,S>::is_empty
+     0.04%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.04%  wasmtime  wasmtime           [.] alloc::vec::Vec<T,A>::reserve
+     0.04%  wasmtime  wasmtime           [.] core::iter::adapters::map::Map<I,F>::new
+     0.04%  wasmtime  wasmtime           [.] core::iter::adapters::map::Map<I,F>::new
+     0.04%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<core::iter::adapters::map::Map<alloc::vec::into_iter::IntoIter<wiggle::GuestPtr<[u8]>>,wasi_common::snapshots::preview_1::<impl wasi_common::snapshots::preview_1::wasi_snapshot_preview1::WasiSnapshotPreview1 for wasi_common::ctx::WasiCtx>::fd_read::{{closure}}::{{closure}}>>
+     0.04%  wasmtime  [kernel.kallsyms]  [k] pagevec_lru_move_fn
+     0.04%  wasmtime  [kernel.kallsyms]  [k] alloc_pages_current
+     0.04%  wasmtime  [kernel.kallsyms]  [k] mark_buffer_dirty
+     0.04%  wasmtime  [kernel.kallsyms]  [k] mutex_lock
+     0.04%  wasmtime  wasmtime           [.] core::slice::iter::Iter<T>::new
+     0.04%  wasmtime  wasmtime           [.] hashbrown::raw::Bucket<T>::read
+     0.04%  wasmtime  wasmtime           [.] core::iter::adapters::map::map_try_fold
+     0.04%  wasmtime  wasmtime           [.] wiggle::GuestPtr<T>::is_shared_memory
+     0.04%  wasmtime  wasmtime           [.] <core::iter::adapters::GenericShunt<I,R> as core::iter::traits::iterator::Iterator>::try_fold::{{closure}}
+     0.04%  wasmtime  wasmtime           [.] core::slice::raw::from_raw_parts
+     0.04%  wasmtime  [kernel.kallsyms]  [k] ext4_es_insert_delayed_block
+     0.04%  wasmtime  wasmtime           [.] core::ptr::non_null::NonNull<T>::new
+     0.04%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.04%  wasmtime  [kernel.kallsyms]  [k] ext4_dirty_inode
+     0.04%  wasmtime  wasmtime           [.] core::option::Option<T>::map
+     0.04%  wasmtime  wasmtime           [.] core::cmp::impls::<impl core::cmp::PartialEq for u32>::eq
+     0.04%  wasmtime  wasmtime           [.] tracing_core::field::FieldSet::len
+     0.04%  wasmtime  wasmtime           [.] alloc::vec::Vec<T,A>::extend_trusted::{{closure}}
+     0.04%  wasmtime  wasmtime           [.] core::slice::raw::from_raw_parts_mut
+     0.04%  wasmtime  wasmtime           [.] <u8 as wiggle::guest_type::GuestType>::guest_size
+     0.04%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<alloc::vec::Vec<wiggle::GuestCow<u8>>>
+     0.04%  wasmtime  wasmtime           [.] core::iter::adapters::map::map_try_fold::{{closure}}
+     0.04%  wasmtime  [kernel.kallsyms]  [k] __sb_end_write
+     0.04%  wasmtime  [kernel.kallsyms]  [k] check_stack_object
+     0.04%  wasmtime  wasmtime           [.] core::core_arch::x86::sse2::_mm_cmpeq_epi8
+     0.04%  wasmtime  [kernel.kallsyms]  [k] apparmor_file_permission
+     0.04%  wasmtime  wasmtime           [.] std::sync::poison::Flag::done
+     0.04%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T,A> as core::iter::traits::collect::IntoIterator>::into_iter
+     0.04%  wasmtime  wasmtime           [.] core::ops::control_flow::ControlFlow::Break
+     0.04%  wasmtime  [kernel.kallsyms]  [k] ext4_da_get_block_prep
+     0.04%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<hashbrown::scopeguard::ScopeGuard<hashbrown::raw::RawTableInner<alloc::alloc::Global>,hashbrown::raw::RawTableInner<alloc::alloc::Global>::prepare_resize::{{closure}}>>
+     0.04%  wasmtime  wasmtime           [.] hashbrown::map::HashMap<K,V,S,A>::remove
+     0.04%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.04%  wasmtime  wasmtime           [.] hashbrown::map::make_hash
+     0.04%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.04%  wasmtime  [kernel.kallsyms]  [k] ext4_file_write_iter
+     0.04%  wasmtime  wasmtime           [.] core::iter::adapters::map::map_fold
+     0.04%  wasmtime  [kernel.kallsyms]  [k] add_to_page_cache_lru
+     0.04%  wasmtime  [kernel.kallsyms]  [k] import_iovec
+     0.04%  wasmtime  [kernel.kallsyms]  [k] __ext4_journal_stop
+     0.04%  wasmtime  wasmtime           [.] core::slice::<impl [T]>::get
+     0.04%  wasmtime  wasmtime           [.] <alloc::alloc::Global as core::alloc::Allocator>::allocate
+     0.04%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T,A> as alloc::vec::spec_extend::SpecExtend<T,I>>::spec_extend
+     0.04%  wasmtime  [kernel.kallsyms]  [k] dec_zone_page_state
+     0.04%  wasmtime  [kernel.kallsyms]  [k] up_read
+     0.04%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::from_output
+     0.04%  wasmtime  wasmtime           [.] core::hash::BuildHasher::hash_one
+     0.04%  wasmtime  wasmtime           [.] core::sync::atomic::AtomicU32::load
+     0.04%  wasmtime  wasmtime           [.] <core::iter::adapters::GenericShunt<I,R> as core::iter::traits::iterator::Iterator>::size_hint
+     0.04%  wasmtime  wasmtime           [.] std::collections::hash::map::HashMap<K,V,S>::remove
+     0.04%  wasmtime  [kernel.kallsyms]  [k] __inc_zone_state
+     0.04%  wasmtime  wasmtime           [.] alloc::boxed::<impl core::convert::From<alloc::boxed::Box<T,A>> for core::pin::Pin<alloc::boxed::Box<T,A>>>::from
+     0.04%  wasmtime  wasmtime           [.] core::slice::<impl [T]>::align_to_offsets::gcd
+     0.04%  wasmtime  wasmtime           [.] wiggle::borrow::InnerBorrowChecker::new_handle
+     0.04%  wasmtime  [kernel.kallsyms]  [k] account_page_dirtied
+     0.04%  wasmtime  wasmtime           [.] <usize as core::slice::index::SliceIndex<[T]>>::index
+     0.04%  wasmtime  wasmtime           [.] tracing::__macro_support::MacroCallsite::disabled_span
+     0.04%  wasmtime  [kernel.kallsyms]  [k] path_put
+     0.04%  wasmtime  [kernel.kallsyms]  [k] ext4_reserve_inode_write
+     0.04%  wasmtime  [kernel.kallsyms]  [k] __generic_file_write_iter
+     0.04%  wasmtime  wasmtime           [.] std::collections::hash::map::HashMap<K,V,S>::get
+     0.04%  wasmtime  wasmtime           [.] core::future::identity_future
+     0.04%  wasmtime  wasmtime           [.] hashbrown::raw::inner::sse2::Group::match_byte
+     0.04%  wasmtime  wasmtime           [.] wiggle::GuestPtr<[T]>::as_cow
+     0.04%  wasmtime  wasmtime           [.] core::option::Option<T>::unwrap
+     0.04%  wasmtime  wasmtime           [.] core::hash::sip::u8to64_le
+     0.04%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T,A> as core::ops::drop::Drop>::drop
+     0.04%  wasmtime  wasmtime           [.] alloc::vec::Vec<T,A>::extend_trusted
+     0.04%  wasmtime  wasmtime           [.] <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::try_fold
+     0.04%  wasmtime  wasmtime           [.] core::ptr::mut_ptr::<impl *mut T>::is_null
+     0.04%  wasmtime  wasmtime           [.] tracing::instrument::Instrument::instrument
+     0.04%  wasmtime  wasmtime           [.] indexmap::map::IndexMap<K,V,S>::len
+     0.04%  wasmtime  wasmtime           [.] wiggle::borrow::InnerBorrowChecker::shared_borrow
+     0.04%  wasmtime  libc-2.31.so       [.] writev
+     0.04%  wasmtime  wasmtime           [.] wiggle::GuestPtr<T>::new
+     0.04%  wasmtime  [kernel.kallsyms]  [k] ext4_get_group_desc
+     0.04%  wasmtime  wasmtime           [.] core::fmt::Arguments::new_v1
+     0.04%  wasmtime  wasmtime           [.] <core::slice::iter::Iter<T> as core::iter::traits::iterator::Iterator>::next
+     0.04%  wasmtime  wasmtime           [.] <core::slice::iter::Iter<T> as core::iter::traits::iterator::Iterator>::all
+     0.04%  wasmtime  wasmtime           [.] free@plt
+     0.04%  wasmtime  [kernel.kallsyms]  [k] mpage_prepare_extent_to_map
+     0.03%  wasmtime  [kernel.kallsyms]  [k] free_unref_page_commit
+     0.03%  wasmtime  [kernel.kallsyms]  [k] free_unref_page_prepare.part.0
+     0.03%  wasmtime  [kernel.kallsyms]  [k] swapgs_restore_regs_and_return_to_usermode
+     0.03%  wasmtime  [kernel.kallsyms]  [k] mpage_process_page_bufs
+     0.03%  wasmtime  [kernel.kallsyms]  [k] find_get_pages_range
+     0.03%  wasmtime  wasmtime           [.] <alloc::alloc::Global as core::alloc::Allocator>::deallocate
+     0.03%  wasmtime  [kernel.kallsyms]  [k] __mod_zone_page_state
+     0.03%  wasmtime  [kernel.kallsyms]  [k] prepare_exit_to_usermode
+     0.02%  wasmtime  wasmtime           [.] <core::core_arch::x86::__m128i as core::core_arch::x86::m128iExt>::as_m128i
+     0.02%  wasmtime  wasmtime           [.] wasmtime_runtime::instance::InstanceHandle::instance
+     0.02%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<wiggle::GuestCow<u8>>
+     0.02%  wasmtime  [kernel.kallsyms]  [k] pagecache_get_page
+     0.02%  wasmtime  wasmtime           [.] <cap_std::fs::file::File as std::os::fd::owned::AsFd>::as_fd
+     0.02%  wasmtime  wasmtime           [.] wiggle::GuestPtr<T>::new
+     0.02%  wasmtime  wasmtime           [.] core::sync::atomic::AtomicU32::store
+     0.02%  wasmtime  wasmtime           [.] wasmtime::store::data::Stored<T>::assert_belongs_to
+     0.02%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T,A> as core::ops::deref::Deref>::deref
+     0.02%  wasmtime  [JIT] tid 3051082  [.] 0x00007fa389b8be86
+     0.02%  wasmtime  wasmtime           [.] <core::ops::control_flow::ControlFlow<B,C> as core::cmp::PartialEq>::eq
+     0.02%  wasmtime  [kernel.kallsyms]  [k] grab_cache_page_write_begin
+     0.02%  wasmtime  wasmtime           [.] alloc::raw_vec::RawVec<T,A>::allocator
+     0.02%  wasmtime  wasmtime           [.] wiggle::borrow::BorrowChecker::new
+     0.02%  wasmtime  [kernel.kallsyms]  [k] kfree
+     0.02%  wasmtime  wasmtime           [.] <core::core_arch::x86::__m128i as core::core_arch::x86::m128iExt>::as_m128i
+     0.02%  wasmtime  wasmtime           [.] core::sync::atomic::atomic_store
+     0.02%  wasmtime  wasmtime           [.] hashbrown::raw::Bucket<T>::write
+     0.02%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<core::option::Option<tracing::span::Inner>>
+     0.02%  wasmtime  wasmtime           [.] core::iter::traits::iterator::Iterator::collect
+     0.02%  wasmtime  wasmtime           [.] hashbrown::raw::RawTable<T,A>::reserve
+     0.02%  wasmtime  wasmtime           [.] <T as io_lifetimes::raw::AsRawFilelike>::as_raw_filelike
+     0.02%  wasmtime  wasmtime           [.] <usize as core::iter::range::Step>::forward_unchecked
+     0.02%  wasmtime  [kernel.kallsyms]  [k] cshook_systemcalltable_post_readv
+     0.02%  wasmtime  wasmtime           [.] <I as core::iter::traits::collect::IntoIterator>::into_iter
+     0.02%  wasmtime  wasmtime           [.] wasi_common::snapshots::preview_1::<impl wasi_common::snapshots::preview_1::wasi_snapshot_preview1::WasiSnapshotPreview1 for wasi_common::ctx::WasiCtx>::fd_read::{{closure}}::{{closure}}
+     0.02%  wasmtime  wasmtime           [.] core::option::Option<T>::ok_or_else
+     0.02%  wasmtime  wasmtime           [.] core::core_arch::x86::sse2::_mm_movemask_epi8
+     0.02%  wasmtime  wasmtime           [.] <hashbrown::raw::inner::bitmask::BitMaskIter as core::iter::traits::iterator::Iterator>::next
+     0.02%  wasmtime  wasmtime           [.] <alloc::vec::into_iter::IntoIter<T,A> as core::iter::traits::iterator::Iterator>::next
+     0.02%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<alloc::sync::Arc<wasi_common::file::FileEntry>>
+     0.02%  wasmtime  wasmtime           [.] wiggle::GuestPtr<T>::add
+     0.02%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<core::iter::adapters::GenericShunt<core::iter::adapters::map::Map<alloc::vec::into_iter::IntoIter<wiggle::GuestPtr<[u8]>>,wasi_common::snapshots::preview_1::<impl wasi_common::snapshots::preview_1::wasi_snapshot_preview1::WasiSnapshotPreview1 for wasi_common::ctx::WasiCtx>::fd_read::{{closure}}::{{closure}}>,core::result::Result<core::convert::Infallible,wasi_common::snapshots::preview_1::types::Error>>>
+     0.02%  wasmtime  wasmtime           [.] tracing::instrument::_::<impl tracing::instrument::Instrumented<T>>::project
+     0.02%  wasmtime  wasmtime           [.] <core::ops::control_flow::ControlFlow<B,C> as core::ops::try_trait::Try>::branch
+     0.02%  wasmtime  wasmtime           [.] hashbrown::raw::RawTableInner<A>::prepare_resize::{{closure}}
+     0.02%  wasmtime  wasmtime           [.] core::iter::traits::iterator::Iterator::for_each
+     0.02%  wasmtime  wasmtime           [.] <core::hash::sip::Hasher<S> as core::hash::Hasher>::write
+     0.02%  wasmtime  [kernel.kallsyms]  [k] __wake_up_common
+     0.02%  wasmtime  wasmtime           [.] wiggle::GuestPtr<T>::read
+     0.02%  wasmtime  wasmtime           [.] <core::result::Result<V,E> as core::iter::traits::collect::FromIterator<core::result::Result<A,E>>>::from_iter
+     0.02%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<core::ops::control_flow::ControlFlow<wiggle::GuestSliceMut<u8>>>
+     0.02%  wasmtime  wasmtime           [.] <core::result::Result<V,E> as core::iter::traits::collect::FromIterator<core::result::Result<A,E>>>::from_iter::{{closure}}
+     0.02%  wasmtime  [JIT] tid 3051082  [.] 0x00007fa389b8be41
+     0.02%  wasmtime  wasmtime           [.] wiggle::UnsafeGuestSlice<T>::shared_borrow
+     0.02%  wasmtime  [kernel.kallsyms]  [k] page_poisoning_enabled
+     0.02%  wasmtime  wasmtime           [.] core::ptr::mut_ptr::<impl *mut T>::is_null
+     0.02%  wasmtime  wasmtime           [.] core::core_arch::x86::sse2::_mm_set1_epi8
+     0.02%  wasmtime  wasmtime           [.] <I as core::iter::traits::collect::IntoIterator>::into_iter
+     0.02%  wasmtime  wasmtime           [.] <[A] as core::slice::cmp::SlicePartialEq<B>>::equal
+     0.02%  wasmtime  wasmtime           [.] wiggle::borrow::InnerBorrowChecker::shared_unborrow
+     0.02%  wasmtime  wasmtime           [.] <T as core::convert::TryInto<U>>::try_into
+     0.02%  wasmtime  wasmtime           [.] <T as io_lifetimes::portability::IntoFilelike>::into_filelike
+     0.02%  wasmtime  wasmtime           [.] <T as core::convert::Into<U>>::into
+     0.02%  wasmtime  [kernel.kallsyms]  [k] should_fail_alloc_page
+     0.02%  wasmtime  wasmtime           [.] <wasi_cap_std_sync::file::File as wasi_common::file::WasiFile>::write_vectored
+     0.02%  wasmtime  wasmtime           [.] std::collections::hash::map::RandomState::new::KEYS::__getit
+     0.02%  wasmtime  wasmtime           [.] wiggle::validate_size_align::{{closure}}
+     0.02%  wasmtime  [JIT] tid 3051082  [.] 0x00007fa389b92158
+     0.02%  wasmtime  [kernel.kallsyms]  [k] jbd2_write_access_granted
+     0.02%  wasmtime  wasmtime           [.] <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::size_hint
+     0.02%  wasmtime  wasmtime           [.] core::sync::atomic::AtomicUsize::load
+     0.02%  wasmtime  wasmtime           [.] wasmtime_runtime::instance::InstanceHandle::store
+     0.02%  wasmtime  wasmtime           [.] alloc::raw_vec::RawVec<T,A>::current_memory
+     0.02%  wasmtime  wasmtime           [.] hashbrown::raw::inner::bitmask::BitMask::remove_lowest_bit
+     0.02%  wasmtime  wasmtime           [.] wiggle::borrow::InnerBorrowChecker::is_mut_borrowed
+     0.02%  wasmtime  wasmtime           [.] <F as core::future::into_future::IntoFuture>::into_future
+     0.02%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.02%  wasmtime  wasmtime           [.] alloc::raw_vec::RawVec<T,A>::current_memory
+     0.02%  wasmtime  wasmtime           [.] wiggle::borrow::BorrowChecker::mut_borrow
+     0.02%  wasmtime  wasmtime           [.] hashbrown::raw::RawTable<T,A>::find::{{closure}}
+     0.02%  wasmtime  [kernel.kallsyms]  [k] file_remove_privs
+     0.02%  wasmtime  wasmtime           [.] <core::ops::control_flow::ControlFlow<B,C> as core::ops::try_trait::Try>::from_output
+     0.02%  wasmtime  [kernel.kallsyms]  [k] do_iter_read
+     0.02%  wasmtime  wasmtime           [.] <core::iter::adapters::GenericShunt<I,R> as core::iter::traits::iterator::Iterator>::try_fold
+     0.02%  wasmtime  wasmtime           [.] <wasi_common::snapshots::preview_1::types::Ciovec as wiggle::guest_type::GuestType>::guest_size
+     0.02%  wasmtime  wasmtime           [.] core::result::Result<T,E>::unwrap
+     0.02%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T,A> as core::ops::index::Index<I>>::index
+     0.02%  wasmtime  wasmtime           [.] core::iter::traits::iterator::Iterator::try_for_each::call::{{closure}}
+     0.02%  wasmtime  wasmtime           [.] alloc::alloc::box_free
+     0.02%  wasmtime  wasmtime           [.] <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::size_hint
+     0.02%  wasmtime  wasmtime           [.] wiggle::GuestPtr<T>::new
+     0.02%  wasmtime  wasmtime           [.] wiggle::GuestPtr<T>::cast
+     0.02%  wasmtime  wasmtime           [.] core::ops::control_flow::ControlFlow<R,<R as core::ops::try_trait::Try>::Output>::from_try
+     0.02%  wasmtime  wasmtime           [.] wasmtime_runtime::instance::InstanceHandle::instance
+     0.02%  wasmtime  [kernel.kallsyms]  [k] xas_nomem
+     0.02%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T> as core::iter::traits::collect::FromIterator<T>>::from_iter
+     0.02%  wasmtime  wasmtime           [.] core::iter::adapters::map::Map<I,F>::new
+     0.02%  wasmtime  [kernel.kallsyms]  [k] ext4_has_free_clusters
+     0.02%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<core::pin::Pin<alloc::boxed::Box<wasmtime_wasi::sync::snapshots::preview_1::add_wasi_snapshot_preview1_to_linker<wasmtime_cli::commands::run::Host,wasi_common::ctx::WasiCtx,wasmtime_cli::commands::run::populate_with_wasi::{{closure}}>::{{closure}}::{{closure}}>>>
+     0.02%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T> as alloc::vec::spec_from_iter::SpecFromIter<T,I>>::from_iter
+     0.02%  wasmtime  [kernel.kallsyms]  [k] get_mem_cgroup_from_page
+     0.02%  wasmtime  wasmtime           [.] core::iter::adapters::try_process
+     0.02%  wasmtime  wasmtime           [.] core::cmp::impls::<impl core::cmp::PartialOrd for usize>::lt
+     0.02%  wasmtime  wasmtime           [.] hashbrown::raw::RawTable<T,A>::find
+     0.02%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<[wiggle::GuestCow<u8>]>
+     0.02%  wasmtime  wasmtime           [.] <wiggle::wasmtime::WasmtimeGuestMemory as wiggle::GuestMemory>::is_mut_borrowed
+     0.02%  wasmtime  wasmtime           [.] hashbrown::raw::RawTable<T,A>::remove_entry
+     0.02%  wasmtime  [kernel.kallsyms]  [k] _raw_write_lock
+     0.02%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<alloc::vec::into_iter::IntoIter<wiggle::GuestPtr<[u8]>>>
+     0.02%  wasmtime  wasmtime           [.] core::future::identity_future
+     0.02%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<wiggle::GuestSliceMut<u8>>
+     0.02%  wasmtime  wasmtime           [.] core::task::wake::Waker::from_raw
+     0.02%  wasmtime  wasmtime           [.] <wiggle::GuestSlice<T> as core::ops::deref::Deref>::deref
+     0.02%  wasmtime  wasmtime           [.] <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::try_fold
+     0.02%  wasmtime  wasmtime           [.] wasmtime::store::data::<impl core::ops::index::Index<I> for wasmtime::store::context::StoreContext<T>>::index
+     0.02%  wasmtime  wasmtime           [.] std::io::IoSlice::new
+     0.02%  wasmtime  wasmtime           [.] core::ptr::mut_ptr::<impl *mut T>::is_null
+     0.02%  wasmtime  wasmtime           [.] core::option::Option<T>::unwrap_or
+     0.02%  wasmtime  [kernel.kallsyms]  [k] file_update_time
+     0.02%  wasmtime  wasmtime           [.] core::future::identity_future
+     0.02%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.02%  wasmtime  [JIT] tid 3051082  [.] 0x00007fa389b8bf00
+     0.02%  wasmtime  wasmtime           [.] alloc::boxed::<impl core::convert::From<alloc::boxed::Box<T,A>> for core::pin::Pin<alloc::boxed::Box<T,A>>>::from
+     0.02%  wasmtime  [kernel.kallsyms]  [k] __next_zones_zonelist
+     0.02%  wasmtime  wasmtime           [.] alloc::boxed::Box<T,A>::into_pin
+     0.02%  wasmtime  wasmtime           [.] <core::ops::control_flow::ControlFlow<B,C> as core::ops::try_trait::FromResidual>::from_residual
+     0.02%  wasmtime  wasmtime           [.] <alloc::raw_vec::RawVec<T,A> as core::ops::drop::Drop>::drop
+     0.02%  wasmtime  wasmtime           [.] wasi_common::snapshots::preview_1::<impl wasi_common::snapshots::preview_1::wasi_snapshot_preview1::WasiSnapshotPreview1 for wasi_common::ctx::WasiCtx>::fd_write::{{closure}}::{{closure}}
+     0.02%  wasmtime  [kernel.kallsyms]  [k] ext4_mark_inode_dirty
+     0.02%  wasmtime  wasmtime           [.] <alloc::raw_vec::RawVec<T,A> as core::ops::drop::Drop>::drop
+     0.02%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<wiggle::GuestSlice<u8>>
+     0.02%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.02%  wasmtime  wasmtime           [.] ZSTD_decompressSequences_bmi2.isra.0
+     0.02%  wasmtime  wasmtime           [.] core::iter::adapters::map::map_fold::{{closure}}
+     0.02%  wasmtime  wasmtime           [.] hashbrown::raw::alloc::inner::do_alloc
+     0.02%  wasmtime  wasmtime           [.] hashbrown::raw::inner::bitmask::BitMask::lowest_set_bit
+     0.02%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.02%  wasmtime  wasmtime           [.] core::iter::traits::iterator::Iterator::for_each
+     0.02%  wasmtime  wasmtime           [.] core::ops::control_flow::ControlFlow<R,<R as core::ops::try_trait::Try>::Output>::from_try
+     0.02%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.02%  wasmtime  wasmtime           [.] <usize as core::slice::index::SliceIndex<[T]>>::index
+     0.02%  wasmtime  [kernel.kallsyms]  [k] xas_create
+     0.02%  wasmtime  wasmtime           [.] <usize as core::iter::range::Step>::forward_unchecked
+     0.02%  wasmtime  wasmtime           [.] <core::result::Result<T,anyhow::Error> as wasmtime::func::WasmRet>::into_abi_for_ret::{{closure}}
+     0.02%  wasmtime  [kernel.kallsyms]  [k] ext4_get_reserved_space
+     0.02%  wasmtime  wasmtime           [.] hashbrown::raw::inner::RawTableInner<A>::ctrl
+     0.02%  wasmtime  wasmtime           [.] core::ops::function::FnMut::call_mut
+     0.02%  wasmtime  wasmtime           [.] <core::iter::adapters::GenericShunt<I,R> as core::iter::traits::iterator::Iterator>::next
+     0.02%  wasmtime  wasmtime           [.] std::sync::poison::Flag::guard
+     0.02%  wasmtime  [kernel.kallsyms]  [k] do_readv
+     0.02%  wasmtime  wasmtime           [.] <std::collections::hash::map::RandomState as core::hash::BuildHasher>::build_hasher
+     0.02%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.02%  wasmtime  [kernel.kallsyms]  [k] alloc_page_buffers
+     0.02%  wasmtime  wasmtime           [.] wiggle::GuestPtr<T>::add::{{closure}}
+     0.02%  wasmtime  [kernel.kallsyms]  [k] truncate_inode_pages_range
+     0.02%  wasmtime  wasmtime           [.] <wasmtime::store::data::StoreId as core::cmp::PartialEq>::eq
+     0.02%  wasmtime  wasmtime           [.] <hashbrown::raw::RawIter<T> as core::iter::traits::iterator::Iterator>::next
+     0.02%  wasmtime  wasmtime           [.] hashbrown::raw::inner::likely
+     0.02%  wasmtime  wasmtime           [.] <std::collections::hash::map::RandomState as core::hash::BuildHasher>::build_hasher
+     0.02%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T,A> as core::ops::deref::Deref>::deref
+     0.02%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<core::task::wake::Waker>
+     0.02%  wasmtime  [kernel.kallsyms]  [k] page_evictable
+     0.02%  wasmtime  wasmtime           [.] std::sync::mutex::MutexGuard<T>::new
+     0.02%  wasmtime  wasmtime           [.] core::iter::adapters::map::map_try_fold::{{closure}}
+     0.02%  wasmtime  wasmtime           [.] alloc::alloc::exchange_malloc
+     0.02%  wasmtime  wasmtime           [.] wasi_common::snapshots::preview_1::<impl wasi_common::snapshots::preview_1::wasi_snapshot_preview1::WasiSnapshotPreview1 for wasi_common::ctx::WasiCtx>::fd_read::{{closure}}::{{closure}}
+     0.02%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<alloc::raw_vec::RawVec<std::io::IoSliceMut>>
+     0.02%  wasmtime  wasmtime           [.] <std::collections::hash::map::DefaultHasher as core::hash::Hasher>::finish
+     0.02%  wasmtime  [kernel.kallsyms]  [k] copy_user_generic_unrolled
+     0.02%  wasmtime  wasmtime           [.] core::option::Option<T>::and_then
+     0.02%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T> as alloc::vec::spec_from_iter_nested::SpecFromIterNested<T,I>>::from_iter
+     0.02%  wasmtime  wasmtime           [.] wiggle::borrow::BorrowChecker::mut_unborrow
+     0.02%  wasmtime  wasmtime           [.] <T as core::convert::Into<U>>::into
+     0.02%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.02%  wasmtime  wasmtime           [.] hashbrown::raw::RawTableInner<A>::set_ctrl_h2
+     0.02%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<core::pin::Pin<alloc::boxed::Box<dyn core::future::future::Future+Output = core::result::Result<u32,wasi_common::snapshots::preview_1::types::Error>+core::marker::Send>>>
+     0.02%  wasmtime  wasmtime           [.] core::iter::traits::iterator::Iterator::map
+     0.02%  wasmtime  wasmtime           [.] core::result::Result<T,E>::unwrap_unchecked
+     0.02%  wasmtime  wasmtime           [.] <u32 as wiggle::guest_type::GuestType>::guest_align
+     0.02%  wasmtime  wasmtime           [.] indexmap::map::IndexMap<K,V,S>::hash
+     0.02%  wasmtime  wasmtime           [.] <core::ops::control_flow::ControlFlow<B,C> as core::ops::try_trait::Try>::from_output
+     0.02%  wasmtime  [kernel.kallsyms]  [k] jbd2_journal_try_to_free_buffers
+     0.02%  wasmtime  wasmtime           [.] core::convert::num::ptr_try_from_impls::<impl core::convert::TryFrom<u32> for usize>::try_from
+     0.02%  wasmtime  [kernel.kallsyms]  [k] __slab_free
+     0.02%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T,A> as alloc::vec::spec_extend::SpecExtend<T,I>>::spec_extend
+     0.02%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::from_output
+     0.02%  wasmtime  [kernel.kallsyms]  [k] xas_init_marks
+     0.02%  wasmtime  [kernel.kallsyms]  [k] ext4_releasepage
+     0.02%  wasmtime  [kernel.kallsyms]  [k] mutex_unlock
+     0.02%  wasmtime  [kernel.kallsyms]  [k] zap_pte_range.isra.0
+     0.02%  wasmtime  [kernel.kallsyms]  [k] xas_find
+     0.02%  wasmtime  wasmtime           [.] alloc::raw_vec::finish_grow
+     0.02%  wasmtime  [kernel.kallsyms]  [k] mpage_submit_page
+     0.02%  wasmtime  [kernel.kallsyms]  [k] ext4_finish_bio
+     0.02%  wasmtime  ld-2.31.so         [.] _dl_rtld_di_serinfo
+     0.02%  wasmtime  [kernel.kallsyms]  [k] jbd2_journal_get_write_access
+     0.02%  wasmtime  [kernel.kallsyms]  [k] free_unref_page_list
+     0.01%  wasmtime  [kernel.kallsyms]  [k] __bio_try_merge_page
+     0.01%  wasmtime  [kernel.kallsyms]  [k] page_add_file_rmap
+     0.01%  wasmtime  wasmtime           [.] core::iter::traits::iterator::Iterator::zip
+     0.01%  wasmtime  wasmtime           [.] core::slice::iter::ChunksExact<T>::new
+     0.01%  wasmtime  wasmtime           [.] core::cmp::Ord::min
+     0.01%  wasmtime  wasmtime           [.] core::slice::<impl [T]>::chunks_exact
+     0.01%  wasmtime  wasmtime           [.] core::ptr::mut_ptr::<impl *mut T>::is_null
+     0.01%  wasmtime  wasmtime           [.] core::ptr::const_ptr::<impl *const T>::is_null
+     0.01%  wasmtime  wasmtime           [.] tracing::instrument::_::<impl tracing::instrument::Instrumented<T>>::project
+     0.01%  wasmtime  [kernel.kallsyms]  [k] cshook_systemcalltable_pre_writev
+     0.01%  wasmtime  [JIT] tid 3051082  [.] 0x00007fa389b8be9e
+     0.01%  wasmtime  wasmtime           [.] <core::slice::iter::ChunksExact<T> as core::iter::traits::iterator::Iterator>::size_hint
+     0.01%  wasmtime  [kernel.kallsyms]  [k] allocate_slab
+     0.01%  wasmtime  wasmtime           [.] alloc::vec::Vec<T,A>::extend_desugared
+     0.01%  wasmtime  wasmtime           [.] <T as core::borrow::Borrow<T>>::borrow
+     0.01%  wasmtime  wasmtime           [.] alloc::sync::Arc<T>::from_inner
+     0.01%  wasmtime  wasmtime           [.] wiggle::GuestPtr<T>::add
+     0.01%  wasmtime  wasmtime           [.] <core::ops::control_flow::ControlFlow<B,C> as core::ops::try_trait::FromResidual>::from_residual
+     0.01%  wasmtime  wasmtime           [.] <I as core::iter::traits::collect::IntoIterator>::into_iter
+     0.01%  wasmtime  wasmtime           [.] hashbrown::raw::RawTable<T,A>::free_buckets
+     0.01%  wasmtime  [JIT] tid 3051082  [.] 0x00007fa389b8bf08
+     0.01%  wasmtime  wasmtime           [.] wasmtime::store::data::<impl core::ops::index::Index<I> for wasmtime::store::context::StoreContextMut<T>>::index
+     0.01%  wasmtime  wasmtime           [.] alloc::boxed::<impl core::convert::From<alloc::boxed::Box<T,A>> for core::pin::Pin<alloc::boxed::Box<T,A>>>::from
+     0.01%  wasmtime  wasmtime           [.] core::iter::adapters::map::map_try_fold
+     0.01%  wasmtime  wasmtime           [.] core::slice::iter::IterMut<T>::new
+     0.01%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T,A> as core::ops::drop::Drop>::drop
+     0.01%  wasmtime  wasmtime           [.] <core::ops::control_flow::ControlFlow<B,C> as core::ops::try_trait::Try>::branch
+     0.01%  wasmtime  [kernel.kallsyms]  [k] scsi_init_command
+     0.01%  wasmtime  wasmtime           [.] <wiggle::GuestSliceMut<T> as core::ops::drop::Drop>::drop
+     0.01%  wasmtime  wasmtime           [.] hashbrown::raw::RawTable<T,A>::find::{{closure}}
+     0.01%  wasmtime  [kernel.kallsyms]  [k] __x64_sys_readv
+     0.01%  wasmtime  wasmtime           [.] <core::result::Result<V,E> as core::iter::traits::collect::FromIterator<core::result::Result<A,E>>>::from_iter::{{closure}}
+     0.01%  wasmtime  [kernel.kallsyms]  [k] __xa_set_mark
+     0.01%  wasmtime  wasmtime           [.] hashbrown::map::make_insert_hash
+     0.01%  wasmtime  wasmtime           [.] hashbrown::map::equivalent_key::{{closure}}
+     0.01%  wasmtime  wasmtime           [.] wiggle::GuestPtr<T>::read
+     0.01%  wasmtime  [kernel.kallsyms]  [k] page_counter_cancel
+     0.01%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T,A> as core::ops::drop::Drop>::drop
+     0.01%  wasmtime  wasmtime           [.] <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::size_hint
+     0.01%  wasmtime  wasmtime           [.] <alloc::boxed::Box<T,A> as core::ops::deref::DerefMut>::deref_mut
+     0.01%  wasmtime  [kernel.kallsyms]  [k] fpregs_assert_state_consistent
+     0.01%  wasmtime  wasmtime           [.] core::ops::control_flow::ControlFlow<R,<R as core::ops::try_trait::Try>::Output>::into_try
+     0.01%  wasmtime  wasmtime           [.] core::ptr::mut_ptr::<impl *mut T>::sub
+     0.01%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.01%  wasmtime  wasmtime           [.] wiggle::borrow::InnerBorrowChecker::mut_unborrow
+     0.01%  wasmtime  wasmtime           [.] core::ops::function::FnMut::call_mut
+     0.01%  wasmtime  wasmtime           [.] core::convert::num::ptr_try_from_impls::<impl core::convert::TryFrom<usize> for u64>::try_from
+     0.01%  wasmtime  wasmtime           [.] wasmtime_runtime::instance::InstanceHandle::module
+     0.01%  wasmtime  wasmtime           [.] wiggle::borrow::BorrowChecker::shared_borrow
+     0.01%  wasmtime  [kernel.kallsyms]  [k] __brelse
+     0.01%  wasmtime  [kernel.kallsyms]  [k] mntput
+     0.01%  wasmtime  [kernel.kallsyms]  [k] __ext4_journal_start_sb
+     0.01%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<hashbrown::raw::RawTable<(wiggle::BorrowHandle,wiggle::region::Region)>>
+     0.01%  wasmtime  wasmtime           [.] core::slice::<impl [T]>::iter
+     0.01%  wasmtime  wasmtime           [.] core::iter::traits::iterator::Iterator::map
+     0.01%  wasmtime  wasmtime           [.] core::iter::traits::iterator::Iterator::collect
+     0.01%  wasmtime  wasmtime           [.] wasi_common::file::FileCaps::contains
+     0.01%  wasmtime  [kernel.kallsyms]  [k] lockref_put_return
+     0.01%  wasmtime  [JIT] tid 3051082  [.] 0x00007fa389b8bf04
+     0.01%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T> as alloc::vec::spec_from_iter::SpecFromIter<T,I>>::from_iter
+     0.01%  wasmtime  [kernel.kallsyms]  [k] down_write_trylock
+     0.01%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T,A> as alloc::vec::spec_extend::SpecExtend<T,I>>::spec_extend
+     0.01%  wasmtime  wasmtime           [.] wasmtime::store::StoreOpaque::instance
+     0.01%  wasmtime  wasmtime           [.] <wiggle::wasmtime::WasmtimeGuestMemory as wiggle::GuestMemory>::shared_unborrow
+     0.01%  wasmtime  [kernel.kallsyms]  [k] iov_iter_advance
+     0.01%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<<wasi_cap_std_sync::file::File as wasi_common::file::WasiFile>::write_vectored::{{closure}}>
+     0.01%  wasmtime  wasmtime           [.] wiggle::GuestPtr<[T]>::len
+     0.01%  wasmtime  [kernel.kallsyms]  [k] _raw_spin_lock_irq
+     0.01%  wasmtime  wasmtime           [.] <T as core::convert::Into<U>>::into
+     0.01%  wasmtime  wasmtime           [.] <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::size_hint
+     0.01%  wasmtime  wasmtime           [.] core::iter::adapters::map::map_fold
+     0.01%  wasmtime  wasmtime           [.] core::iter::adapters::map::Map<I,F>::new
+     0.01%  wasmtime  wasmtime           [.] <core::ops::control_flow::ControlFlow<B,C> as core::ops::try_trait::Try>::from_output
+     0.01%  wasmtime  wasmtime           [.] <T as core::borrow::Borrow<T>>::borrow
+     0.01%  wasmtime  wasmtime           [.] std::sys::unix::locks::futex_rwlock::is_read_lockable
+     0.01%  wasmtime  wasmtime           [.] <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::size_hint
+     0.01%  wasmtime  [JIT] tid 3051082  [.] 0x00007fa389b8b400
+     0.01%  wasmtime  wasmtime           [.] <std::collections::hash::map::DefaultHasher as core::hash::Hasher>::finish
+     0.01%  wasmtime  wasmtime           [.] core::iter::traits::iterator::Iterator::map
+     0.01%  wasmtime  wasmtime           [.] <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::size_hint
+     0.01%  wasmtime  wasmtime           [.] alloc::alloc::Global::alloc_impl
+     0.01%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T,A> as core::ops::deref::DerefMut>::deref_mut
+     0.01%  wasmtime  wasmtime           [.] <core::ops::control_flow::ControlFlow<B,C> as core::ops::try_trait::FromResidual>::from_residual
+     0.01%  wasmtime  wasmtime           [.] core::cell::Cell<T>::replace
+     0.01%  wasmtime  wasmtime           [.] hashbrown::raw::inner::h1
+     0.01%  wasmtime  [JIT] tid 3051082  [.] 0x00007fa389b8b24b
+     0.01%  wasmtime  wasmtime           [.] tracing_core::metadata::Metadata::target
+     0.01%  wasmtime  wasmtime           [.] <std::collections::hash::map::Values<K,V> as core::iter::traits::iterator::Iterator>::next
+     0.01%  wasmtime  wasmtime           [.] core::option::Option<T>::and_then
+     0.01%  wasmtime  wasmtime           [.] core::iter::traits::iterator::Iterator::collect
+     0.01%  wasmtime  wasmtime           [.] <core::ops::range::RangeTo<usize> as core::slice::index::SliceIndex<[T]>>::get
+     0.01%  wasmtime  [kernel.kallsyms]  [k] __unlock_page_memcg
+     0.01%  wasmtime  wasmtime           [.] core::ops::control_flow::ControlFlow<B,C>::break_value
+     0.01%  wasmtime  wasmtime           [.] <u32 as wiggle::guest_type::GuestType>::guest_size
+     0.01%  wasmtime  wasmtime           [.] <alloc::sync::Arc<T> as core::ops::deref::Deref>::deref
+     0.01%  wasmtime  [JIT] tid 3051082  [.] 0x00007fa389b92150
+     0.01%  wasmtime  [kernel.kallsyms]  [k] xas_alloc
+     0.01%  wasmtime  [kernel.kallsyms]  [k] up_write
+     0.01%  wasmtime  wasmtime           [.] core::iter::traits::iterator::Iterator::any
+     0.01%  wasmtime  wasmtime           [.] <std::os::fd::owned::BorrowedFd as std::os::fd::raw::AsRawFd>::as_raw_fd
+     0.01%  wasmtime  wasmtime           [.] core::iter::traits::iterator::Iterator::try_for_each::call::{{closure}}
+     0.01%  wasmtime  wasmtime           [.] <core::ops::control_flow::ControlFlow<B,C> as core::ops::try_trait::Try>::branch
+     0.01%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<core::iter::traits::iterator::Iterator::for_each::call<std::io::IoSliceMut,alloc::vec::Vec<std::io::IoSliceMut>::extend_trusted<core::iter::adapters::map::Map<core::slice::iter::IterMut<wiggle::GuestSliceMut<u8>>,wasi_common::snapshots::preview_1::<impl wasi_common::snapshots::preview_1::wasi_snapshot_preview1::WasiSnapshotPreview1 for wasi_common::ctx::WasiCtx>::fd_read::{{closure}}::{{closure}}>>::{{closure}}>::{{closure}}>
+     0.01%  wasmtime  [kernel.kallsyms]  [k] touch_atime
+     0.01%  wasmtime  wasmtime           [.] <core::ops::control_flow::ControlFlow<B,C> as core::ops::try_trait::Try>::from_output
+     0.01%  wasmtime  [kernel.kallsyms]  [k] vfs_readv
+     0.01%  wasmtime  wasmtime           [.] core::iter::traits::iterator::Iterator::map
+     0.01%  wasmtime  wasmtime           [.] <wasmtime::store::context::StoreContextMut<T> as wasmtime::store::context::AsContext>::as_context
+     0.01%  wasmtime  wasmtime           [.] <core::iter::adapters::GenericShunt<I,R> as core::iter::traits::iterator::Iterator>::try_fold
+     0.01%  wasmtime  wasmtime           [.] hashbrown::raw::RawTableInner<A>::set_ctrl
+     0.01%  wasmtime  wasmtime           [.] core::convert::num::ptr_try_from_impls::<impl core::convert::TryFrom<u32> for usize>::try_from
+     0.01%  wasmtime  wasmtime           [.] core::hash::Hasher::write_usize
+     0.01%  wasmtime  wasmtime           [.] hashbrown::map::equivalent_key::{{closure}}
+     0.01%  wasmtime  [kernel.kallsyms]  [k] __f_unlock_pos
+     0.01%  wasmtime  wasmtime           [.] core::iter::traits::iterator::Iterator::fold
+     0.01%  wasmtime  wasmtime           [.] core::iter::traits::iterator::Iterator::try_for_each::call::{{closure}}
+     0.01%  wasmtime  wasmtime           [.] <core::ops::control_flow::ControlFlow<B,C> as core::ops::try_trait::Try>::from_output
+     0.01%  wasmtime  wasmtime           [.] core::option::Option<T>::is_none
+     0.01%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<core::iter::adapters::map::map_fold<&wiggle::GuestCow<u8>,std::io::IoSlice,(),wasi_common::snapshots::preview_1::<impl wasi_common::snapshots::preview_1::wasi_snapshot_preview1::WasiSnapshotPreview1 for wasi_common::ctx::WasiCtx>::fd_write::{{closure}}::{{closure}},core::iter::traits::iterator::Iterator::for_each::call<std::io::IoSlice,alloc::vec::Vec<std::io::IoSlice>::extend_trusted<core::iter::adapters::map::Map<core::slice::iter::Iter<wiggle::GuestCow<u8>>,wasi_common::snapshots::preview_1::<impl wasi_common::snapshots::preview_1::wasi_snapshot_preview1::WasiSnapshotPreview1 for wasi_common::ctx::WasiCtx>::fd_write::{{closure}}::{{closure}}>>::{{closure}}>::{{closure}}>::{{closure}}>
+     0.01%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T,A> as core::ops::index::Index<I>>::index
+     0.01%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.01%  wasmtime  [kernel.kallsyms]  [k] __check_object_size
+     0.01%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<core::option::Option<wiggle::GuestSliceMut<u8>>>
+     0.01%  wasmtime  wasmtime           [.] <F as core::future::into_future::IntoFuture>::into_future
+     0.01%  wasmtime  wasmtime           [.] wasmtime::memory::Memory::ty
+     0.01%  wasmtime  wasmtime           [.] <i32 as wasmtime::func::typed::WasmTy>::into_abi
+     0.01%  wasmtime  wasmtime           [.] <&mut T as wasmtime::store::context::AsContextMut>::as_context_mut
+     0.01%  wasmtime  wasmtime           [.] wasmtime::store::StoreInner<T>::data_mut
+     0.01%  wasmtime  wasmtime           [.] <alloc::sync::Arc<T> as core::ops::deref::Deref>::deref
+     0.01%  wasmtime  [kernel.kallsyms]  [k] get_task_policy.part.0
+     0.01%  wasmtime  wasmtime           [.] wasmtime_runtime::instance::Instance::vmctx_offset
+     0.01%  wasmtime  wasmtime           [.] core::core_arch::x86::sse2::_mm_load_si128
+     0.01%  wasmtime  [kernel.kallsyms]  [k] mem_cgroup_commit_charge
+     0.01%  wasmtime  wasmtime           [.] core::iter::traits::exact_size::ExactSizeIterator::len
+     0.01%  wasmtime  [kernel.kallsyms]  [k] generic_write_end
+     0.01%  wasmtime  wasmtime           [.] wasi_common::snapshots::preview_1::<impl wasi_common::snapshots::preview_1::wasi_snapshot_preview1::WasiSnapshotPreview1 for wasi_common::ctx::WasiCtx>::fd_read::{{closure}}::{{closure}}
+     0.01%  wasmtime  wasmtime           [.] <T as core::any::Any>::type_id
+     0.01%  wasmtime  wasmtime           [.] <T as core::convert::Into<U>>::into
+     0.01%  wasmtime  wasmtime           [.] core::option::Option<&T>::copied
+     0.01%  wasmtime  wasmtime           [.] <I as core::iter::traits::collect::IntoIterator>::into_iter
+     0.01%  wasmtime  wasmtime           [.] hashbrown::raw::RawTable<T,A>::remove
+     0.01%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.01%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<wasi_common::snapshots::preview_1::wasi_snapshot_preview1::fd_read<wasi_common::ctx::WasiCtx>::{{closure}}>
+     0.01%  wasmtime  wasmtime           [.] core::mem::swap
+     0.01%  wasmtime  [kernel.kallsyms]  [k] generic_file_read_iter
+     0.01%  wasmtime  [JIT] tid 3051082  [.] 0x00007fa389b8bf0b
+     0.01%  wasmtime  [kernel.kallsyms]  [k] get_random_u32
+     0.01%  wasmtime  wasmtime           [.] hashbrown::map::equivalent_key
+     0.01%  wasmtime  wasmtime           [.] wiggle::GuestPtr<[T]>::as_ptr
+     0.01%  wasmtime  wasmtime           [.] wiggle::GuestPtr<[T]>::as_ptr
+     0.01%  wasmtime  wasmtime           [.] __rust_dealloc
+     0.01%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T,A> as core::ops::deref::Deref>::deref
+     0.01%  wasmtime  [kernel.kallsyms]  [k] mntput_no_expire
+     0.01%  wasmtime  wasmtime           [.] <alloc::raw_vec::RawVec<T,A> as core::ops::drop::Drop>::drop
+     0.01%  wasmtime  wasmtime           [.] core::ops::function::FnMut::call_mut
+     0.01%  wasmtime  wasmtime           [.] wiggle::GuestPtr<T>::offset
+     0.01%  wasmtime  wasmtime           [.] alloc::boxed::Box<T,A>::into_pin
+     0.01%  wasmtime  [kernel.kallsyms]  [k] lru_cache_add
+     0.01%  wasmtime  wasmtime           [.] hashbrown::raw::RawTable<T,A>::get_mut
+     0.01%  wasmtime  wasmtime           [.] hashbrown::raw::inner::bitmask::BitMask::trailing_zeros
+     0.01%  wasmtime  [kernel.kallsyms]  [k] inode_reserved_space
+     0.01%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<core::ops::control_flow::ControlFlow<wiggle::GuestCow<u8>>>
+     0.01%  wasmtime  wasmtime           [.] core::fmt::ArgumentV1::new_display
+     0.01%  wasmtime  wasmtime           [.] <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::try_fold
+     0.01%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T,A> as alloc::vec::spec_extend::SpecExtend<T,I>>::spec_extend
+     0.01%  wasmtime  wasmtime           [.] core::hash::Hasher::write_u32
+     0.01%  wasmtime  wasmtime           [.] core::option::Option<T>::unwrap
+     0.01%  wasmtime  wasmtime           [.] std::sync::mutex::MutexGuard<T>::new::{{closure}}
+     0.01%  wasmtime  wasmtime           [.] <wasi_common::snapshots::preview_1::types::Iovec as wiggle::guest_type::GuestType>::guest_size
+     0.01%  wasmtime  [kernel.kallsyms]  [k] __count_memcg_events
+     0.01%  wasmtime  wasmtime           [.] hashbrown::map::equivalent_key
+     0.01%  wasmtime  wasmtime           [.] HUF_decompress4X2_usingDTable_internal_bmi2_asm
+     0.01%  wasmtime  [kernel.kallsyms]  [k] mem_cgroup_page_lruvec
+     0.01%  wasmtime  wasmtime           [.] <zstd_safe::InBufferWrapper as core::ops::deref::DerefMut>::deref_mut
+     0.01%  wasmtime  wasmtime           [.] core::iter::adapters::map::map_try_fold
+     0.01%  wasmtime  wasmtime           [.] <generic_array::GenericArray<T,N> as generic_array::sequence::GenericSequence<T>>::generate::{{closure}}
+     0.01%  wasmtime  wasmtime           [.] core::slice::<impl [T]>::align_to_offsets::gcd
+     0.01%  wasmtime  wasmtime           [.] core::alloc::layout::size_align
+     0.01%  wasmtime  [kernel.kallsyms]  [k] __wake_up_common_lock
+     0.01%  wasmtime  wasmtime           [.] alloc::boxed::<impl core::convert::From<alloc::boxed::Box<T,A>> for core::pin::Pin<alloc::boxed::Box<T,A>>>::from
+     0.01%  wasmtime  wasmtime           [.] core::num::<impl usize>::checked_add
+     0.01%  wasmtime  wasmtime           [.] alloc::raw_vec::RawVec<T,A>::new_in
+     0.01%  wasmtime  [kernel.kallsyms]  [k] ___slab_alloc
+     0.01%  wasmtime  [kernel.kallsyms]  [k] __wake_up_bit
+     0.01%  wasmtime  wasmtime           [.] std::sync::rwlock::RwLock<T>::read
+     0.01%  wasmtime  wasmtime           [.] wiggle::borrow::BorrowChecker::is_shared_borrowed
+     0.01%  wasmtime  wasmtime           [.] alloc::raw_vec::RawVec<T,A>::reserve
+     0.01%  wasmtime  wasmtime           [.] <I as core::iter::traits::collect::IntoIterator>::into_iter
+     0.01%  wasmtime  [kernel.kallsyms]  [k] page_cache_free_page.isra.0
+     0.01%  wasmtime  wasmtime           [.] alloc::boxed::Box<T,A>::into_pin
+     0.01%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T,A> as core::ops::deref::DerefMut>::deref_mut
+     0.01%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.01%  wasmtime  [kernel.kallsyms]  [k] recalc_bh_state.part.0
+     0.01%  wasmtime  wasmtime           [.] <core::ops::range::Range<T> as core::iter::range::RangeIteratorImpl>::spec_next
+     0.01%  wasmtime  wasmtime           [.] smallvec::SmallVec<A>::spilled
+     0.01%  wasmtime  wasmtime           [.] alloc::vec::Vec<T,A>::extend_trusted::{{closure}}
+     0.01%  wasmtime  [kernel.kallsyms]  [k] __fdget_pos
+     0.01%  wasmtime  wasmtime           [.] <&std::os::unix::net::stream::UnixStream as std::io::Write>::write_vectored
+     0.01%  wasmtime  [kernel.kallsyms]  [k] uncharge_page
+     0.01%  wasmtime  wasmtime           [.] cranelift_codegen::machinst::vcode::VCodeBuilder<I>::reverse_and_finalize
+     0.01%  wasmtime  wasmtime           [.] smallvec::SmallVec<A>::triple
+     0.01%  wasmtime  wasmtime           [.] wiggle::GuestPtr<[T]>::offset_base
+     0.01%  wasmtime  wasmtime           [.] wiggle::GuestPtr<[T]>::iter::{{closure}}
+     0.01%  wasmtime  wasmtime           [.] alloc::collections::btree::navigate::LazyLeafRange<alloc::collections::btree::node::marker::Dying,K,V>::take_front
+     0.01%  wasmtime  wasmtime           [.] alloc::vec::into_iter::IntoIter<T,A>::as_raw_mut_slice
+     0.01%  wasmtime  wasmtime           [.] hashbrown::raw::Bucket<T>::from_base_index
+     0.01%  wasmtime  wasmtime           [.] <core::result::Result<T,E> as core::ops::try_trait::Try>::branch
+     0.01%  wasmtime  wasmtime           [.] smallvec::SmallVec<A>::inline_size
+     0.01%  wasmtime  wasmtime           [.] wiggle::GuestPtr<T>::offset
+     0.01%  wasmtime  [kernel.kallsyms]  [k] task_numa_work
+     0.01%  wasmtime  wasmtime           [.] core::ptr::non_null::NonNull<T>::new_unchecked
+     0.01%  wasmtime  wasmtime           [.] alloc::sync::Arc<[T]>::copy_from_slice
+     0.01%  wasmtime  [kernel.kallsyms]  [k] try_to_free_buffers
+     0.01%  wasmtime  [kernel.kallsyms]  [k] mem_cgroup_update_lru_size
+     0.01%  wasmtime  wasmtime           [.] <core::ops::range::Range<usize> as core::slice::index::SliceIndex<[T]>>::get_unchecked
+     0.01%  wasmtime  wasmtime           [.] hashbrown::raw::RawTableInner<A>::find_inner
+     0.01%  wasmtime  [kernel.kallsyms]  [k] mark_page_accessed
+     0.01%  wasmtime  wasmtime           [.] hashbrown::raw::RawTableInner<A>::find_inner
+     0.01%  wasmtime  wasmtime           [.] alloc::raw_vec::RawVec<T,A>::needs_to_grow
+     0.01%  wasmtime  wasmtime           [.] hashbrown::raw::RawTable<T,A>::reserve
+     0.01%  wasmtime  wasmtime           [.] wiggle::GuestPtr<[T]>::iter::{{closure}}
+     0.01%  wasmtime  wasmtime           [.] rustix::backend::conv::ret
+     0.01%  wasmtime  wasmtime           [.] <std::sync::rwlock::RwLockReadGuard<T> as core::ops::drop::Drop>::drop
+     0.01%  wasmtime  wasmtime           [.] alloc::raw_vec::RawVec<T,A>::needs_to_grow
+     0.01%  wasmtime  wasmtime           [.] <core::slice::iter::ChunksExactMut<T> as core::iter::traits::iterator::Iterator>::next
+     0.01%  wasmtime  wasmtime           [.] smallvec::SmallVec<A>::triple
+     0.01%  wasmtime  wasmtime           [.] <cranelift_codegen::timing::DefaultTimingToken as core::ops::drop::Drop>::drop
+     0.01%  wasmtime  [kernel.kallsyms]  [k] free_unref_page
+     0.01%  wasmtime  wasmtime           [.] wasmtime_runtime::instance::Instance::memory_fill
+     0.01%  wasmtime  wasmtime           [.] regalloc2::ion::liveranges::<impl regalloc2::ion::data_structures::Env<F>>::fixup_multi_fixed_vregs::{{closure}}
+     0.01%  wasmtime  wasmtime           [.] <core::slice::iter::Iter<T> as core::iter::traits::iterator::Iterator>::size_hint
+     0.01%  wasmtime  wasmtime           [.] <core::cell::BorrowRef as core::ops::drop::Drop>::drop
+     0.01%  wasmtime  wasmtime           [.] wiggle::run_in_dummy_executor
+     0.01%  wasmtime  wasmtime           [.] cranelift_codegen::alias_analysis::AliasAnalysis::process_inst
+     0.01%  wasmtime  wasmtime           [.] alloc::raw_vec::RawVec<T,A>::allocate_in
+     0.01%  wasmtime  [kernel.kallsyms]  [k] sync_regs
+     0.01%  wasmtime  [kernel.kallsyms]  [k] page_mkclean
+     0.01%  wasmtime  [kernel.kallsyms]  [k] page_remove_rmap
+     0.01%  wasmtime  [kernel.kallsyms]  [k] native_irq_return_iret
+     0.01%  wasmtime  [kernel.kallsyms]  [k] __do_fault
+     0.01%  wasmtime  wasmtime           [.] core::slice::<impl [T]>::split_at_unchecked
+     0.01%  wasmtime  wasmtime           [.] core::iter::adapters::zip::Zip<A,B>::new
+     0.01%  wasmtime  [kernel.kallsyms]  [k] xas_find_marked
+     0.01%  wasmtime  [kernel.kallsyms]  [k] kthread_blkcg
+     0.01%  wasmtime  [kernel.kallsyms]  [k] do_anonymous_page
+     0.01%  wasmtime  [kernel.kallsyms]  [k] wbc_account_cgroup_owner
+     0.01%  wasmtime  [kernel.kallsyms]  [k] do_user_addr_fault
+     0.01%  wasmtime  [kernel.kallsyms]  [k] page_fault
+     0.00%  wasmtime  [kernel.kallsyms]  [k] perf_event_alloc
+     0.00%  wasmtime  wasmtime           [.] <core::hash::sip::Sip13Rounds as core::hash::sip::Sip>::d_rounds
+     0.00%  wasmtime  wasmtime           [.] core::mem::replace
+     0.00%  wasmtime  wasmtime           [.] <core::slice::iter::Iter<T> as core::iter::traits::iterator::Iterator>::next
+     0.00%  wasmtime  wasmtime           [.] core::ptr::mut_ptr::<impl *mut T>::is_null
+     0.00%  wasmtime  wasmtime           [.] clap::builder::debug_asserts::assert_app::{{closure}}
+     0.00%  wasmtime  wasmtime           [.] core::result::Result<T,E>::unwrap_unchecked
+     0.00%  wasmtime  wasmtime           [.] <core::slice::iter::Iter<T> as core::iter::traits::iterator::Iterator>::find
+     0.00%  wasmtime  wasmtime           [.] hashbrown::raw::inner::sse2::Group::match_byte
+     0.00%  wasmtime  wasmtime           [.] <core::slice::iter::Iter<T> as core::iter::traits::iterator::Iterator>::next
+     0.00%  wasmtime  wasmtime           [.] <T as core::convert::Into<U>>::into
+     0.00%  wasmtime  wasmtime           [.] clap::builder::command::App::_build_self
+     0.00%  wasmtime  wasmtime           [.] clap::builder::arg_settings::ArgFlags::empty
+     0.00%  wasmtime  [kernel.kallsyms]  [k] perf_iterate_ctx
+     0.00%  wasmtime  libgcc_s.so.1      [.] 0x00000000000037ed
+     0.00%  wasmtime  [kernel.kallsyms]  [k] __rb_insert_augmented
+     0.00%  wasmtime  [kernel.kallsyms]  [k] mem_cgroup_try_charge_delay
+     0.00%  wasmtime  [kernel.kallsyms]  [k] wbt_inflight_cb
+     0.00%  wasmtime  [kernel.kallsyms]  [k] unlock_page_memcg
+     0.00%  wasmtime  [kernel.kallsyms]  [k] blk_flush_plug_list
+     0.00%  wasmtime  [kernel.kallsyms]  [k] test_clear_page_writeback
+     0.00%  wasmtime  [kernel.kallsyms]  [k] bio_add_page
+     0.00%  wasmtime  [kernel.kallsyms]  [k] wait_on_page_writeback
+     0.00%  wasmtime  [kernel.kallsyms]  [k] generic_make_request
+     0.00%  wasmtime  [kernel.kallsyms]  [k] __pagevec_release
+     0.00%  wasmtime  wasmtime           [.] std::sync::poison::map_result
+     0.00%  wasmtime  [kernel.kallsyms]  [k] sg_next
+     0.00%  wasmtime  [kernel.kallsyms]  [k] scsi_decide_disposition
+     0.00%  wasmtime  [kernel.kallsyms]  [k] __blk_bios_map_sg
+     0.00%  wasmtime  [kernel.kallsyms]  [k] mm_update_next_owner
+     0.00%  wasmtime  wasmtime           [.] alloc::vec::Vec<T,A>::push
+     0.00%  wasmtime  wasmtime           [.] core::ptr::drop_in_place<cranelift_entity::primary::PrimaryMap<wasmtime_types::TableIndex,alloc::vec::Vec<wasmtime_types::FuncIndex>>>
+     0.00%  wasmtime  wasmtime           [.] <alloc::vec::Vec<T,A> as core::ops::index::IndexMut<I>>::index_mut
+     0.00%  wasmtime  [kernel.kallsyms]  [k] error_entry
+     0.00%  wasmtime  [kernel.kallsyms]  [k] userfaultfd_unmap_prep
+     0.00%  wasmtime  ld-2.31.so         [.] 0x0000000000002fa6
+     0.00%  wasmtime  [kernel.kallsyms]  [k] futex_wait
+     0.00%  wasmtime  ld-2.31.so         [.] _dl_debug_state
+     0.00%  wasmtime  ld-2.31.so         [.] _dl_catch_error
+     0.00%  wasmtime  wasmtime           [.] <core::iter::adapters::enumerate::Enumerate<I> as core::iter::traits::iterator::Iterator>::next
+     0.00%  wasmtime  [kernel.kallsyms]  [k] vmacache_find
+     0.00%  wasmtime  [kernel.kallsyms]  [k] __update_load_avg_cfs_rq
+     0.00%  wasmtime  [kernel.kallsyms]  [k] uncharge_batch
+     0.00%  wasmtime  [kernel.kallsyms]  [k] find_vma
+     0.00%  perf      [kernel.kallsyms]  [k] perf_event_addr_filters_exec
+     0.00%  wasmtime  [kernel.kallsyms]  [k] nmi_restore
+     0.00%  perf      [kernel.kallsyms]  [k] native_flush_tlb_one_user
+     0.00%  wasmtime  [kernel.kallsyms]  [k] acpi_os_read_memory
+     0.00%  perf      [kernel.kallsyms]  [k] native_sched_clock
+     0.00%  wasmtime  [kernel.kallsyms]  [k] native_write_msr
+     0.00%  perf      [kernel.kallsyms]  [k] native_write_msr
+     0.00%  wasmtime  [kernel.kallsyms]  [k] intel_bts_enable_local
+     0.00%  perf      [kernel.kallsyms]  [k] __intel_pmu_enable_all.constprop.0
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

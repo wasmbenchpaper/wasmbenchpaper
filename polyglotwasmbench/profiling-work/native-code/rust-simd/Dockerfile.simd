@@ -1,0 +1,4 @@
+FROM ubuntu
+COPY simd simd
+CMD ["./simd", "256", "256", "100"]
+

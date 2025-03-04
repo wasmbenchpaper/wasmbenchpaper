@@ -1,0 +1,3 @@
+FROM scratch
+COPY nosimd.wasm nosimd.wasm
+CMD ["./nosimd.wasm", "256", "256", "100"]

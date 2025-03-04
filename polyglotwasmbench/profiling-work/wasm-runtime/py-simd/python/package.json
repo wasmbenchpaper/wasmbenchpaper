@@ -1,0 +1,22 @@
+{
+  "name": "t1",
+  "packageManager": "pnpm@7.28.0",
+  "private": "true",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "start-custom-wheel": "node index-using-custom-wheel.js",
+    "start-bitmap": "node index-bitmap.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pyodide": "^0.22.1"
+  }
+}

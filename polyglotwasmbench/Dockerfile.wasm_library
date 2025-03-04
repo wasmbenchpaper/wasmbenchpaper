@@ -1,0 +1,57 @@
+FROM us.icr.io/polyglotwasmbench/sdk-wrapper-buildstage-time:latest
+
+WORKDIR /wasms
+
+COPY . .
+
+# sort
+
+## c
+
+WORKDIR /wasms/sort/cpp
+
+RUN make build-wasm
+
+## go
+
+WORKDIR /wasms/sort/go
+
+RUN tinygo build -o main.wasm -target wasi ./sort.go
+
+## rust
+
+WORKDIR /wasms/sort/rust
+
+RUN ~/.cargo/bin/cargo build --release --target wasm32-wasi && cp target/wasm32-wasi/release/sort.wasm main.wasm
+
+# copy-file
+
+## c
+
+WORKDIR /wasms/copy-file/cpp
+
+RUN make build-wasm
+
+## go
+
+WORKDIR /wasms/copy-file/go
+
+RUN tinygo build -o main.wasm -target wasi ./main.go
+
+## rust
+
+WORKDIR /wasms/copy-file/rust
+
+RUN ~/.cargo/bin/cargo build --release --target wasm32-wasi && cp target/wasm32-wasi/release/copy.wasm main.wasm
+
+# file-server
+
+WORKDIR /wasms/file-server/rust/wasm
+
+RUN ~/.cargo/bin/cargo build --release --target wasm32-wasi && mkdir -p http && cp target/wasm32-wasi/release/wasi-server-http.wasm http/main.wasm && mkdir -p echo && cp target/wasm32-wasi/release/wasi-server-echo.wasm echo/main.wasm
+
+
+
+
+
+

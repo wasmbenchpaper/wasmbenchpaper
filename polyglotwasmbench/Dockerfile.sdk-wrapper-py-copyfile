@@ -1,0 +1,16 @@
+FROM python:3.9
+
+WORKDIR /app
+
+
+COPY copy-file/move2kube.mp4 move2kube.mp4
+
+RUN pip install wasmtime
+
+# Copy WASM module
+COPY --from=us.icr.io/polyglotwasmbench/sdk-wasm-library-time:latest /wasms/copy-file/rust/main.wasm main.wasm
+
+# #  Copy Wrapper
+COPY --from=us.icr.io/polyglotwasmbench/sdk-wrapper-library-time:latest /wrappers/output/py_wasmtime_wrapper.py py_wasmtime_wrapper.py
+
+CMD [ "python", "py_wasmtime_wrapper.py", "main.wasm","./move2kube.mp4", "./move2kube_copy.mp4"]

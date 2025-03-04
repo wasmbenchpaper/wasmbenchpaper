@@ -1,0 +1,14 @@
+FROM ubuntu:22.10
+
+WORKDIR /app
+
+
+COPY copy-file/move2kube.mp4 move2kube.mp4
+
+# Copy WASM module
+COPY --from=us.icr.io/polyglotwasmbench/sdk-wasm-library-time:latest /wasms/file-server/rust/wasm/http/main.wasm main.wasm
+
+ENV LISTEN_FDS=1
+
+CMD [ "main.wasm", "127.0.0.1", "8080", "./"]
+

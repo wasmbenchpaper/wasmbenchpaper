@@ -1,0 +1,55 @@
+FROM us.icr.io/polyglotwasmbench/sdk-wrapper-buildstage-time:latest
+
+WORKDIR /wrappers
+
+COPY sdk-wrappers sdk-wrappers
+
+# c wasmedge wrapper
+
+RUN echo 'source $HOME/.wasmedge/env' >> ~/.bashrc && source ~/.bashrc && gcc sdk-wrappers/c/wasmedge/cli_based_input/embed.c -lwasmedge -o c_wasmedge_wrapper
+
+# go wasmedge wrapper
+
+ENV GO111MODULE="on"
+
+RUN mkdir -p /root/go/src/wrapper/wasmedge_go_wrapper && cp -r sdk-wrappers/golang/wasmedge/cli_based_input/* /root/go/src/wrapper/wasmedge_go_wrapper
+
+WORKDIR /root/go/src/wrapper/wasmedge_go_wrapper
+
+RUN echo 'source $HOME/.wasmedge/env' >> ~/.bashrc && source ~/.bashrc && /usr/local/go/bin/go mod init && /usr/local/go/bin/go get github.com/second-state/WasmEdge-go/wasmedge@v0.11.2 && /usr/local/go/bin/go build -o go_wasmedge_wrapper
+
+# go wasmtime wrapper
+
+WORKDIR /wrappers
+
+RUN mkdir -p /root/go/src/wrapper/wasmtime_go_wrapper && cp sdk-wrappers/golang/wasmtime/cli_based_input/* /root/go/src/wrapper/wasmtime_go_wrapper
+
+WORKDIR /root/go/src/wrapper/wasmtime_go_wrapper
+
+RUN /usr/local/go/bin/go mod init && /usr/local/go/bin/go get && /usr/local/go/bin/go build -o go_wasmtime_wrapper
+
+WORKDIR /wrappers
+
+WORKDIR /wrappers
+
+# rust wasmedge wrapper
+
+RUN  ~/.cargo/bin/cargo build --manifest-path sdk-wrappers/rust/wasmedge/cli-based-input/Cargo.toml --release --target-dir target_wasmedge
+
+# rust wasmtime wrapper
+
+RUN  ~/.cargo/bin/cargo build --manifest-path sdk-wrappers/rust/wasmtime/cli-based-input/Cargo.toml --release --target-dir target_wasmtime
+
+# copy wrappers to a export folder
+WORKDIR /wrappers/output
+
+RUN cp /wrappers/c_wasmedge_wrapper c_wasmedge_wrapper
+
+RUN cp /root/go/src/wrapper/wasmedge_go_wrapper/go_wasmedge_wrapper go_wasmedge_wrapper
+
+RUN cp /root/go/src/wrapper/wasmtime_go_wrapper/go_wasmtime_wrapper go_wasmtime_wrapper
+
+RUN cp /wrappers/target_wasmedge/release/embed_rust rust_wasmedge_wrapper
+RUN cp /wrappers/target_wasmtime/release/embed_rust rust_wasmtime_wrapper
+
+RUN cp /wrappers/sdk-wrappers/python/wasmtime/cli_based_input/embed.py py_wasmtime_wrapper.py

@@ -1,0 +1,25 @@
+[package]
+edition = "2021"
+name = "embed_rust"
+version = "0.1.0"
+
+[dependencies]
+anyhow = "1.0"
+num-derive = "0.3"
+num-traits = "0.2"
+thiserror = "1.0.30"
+wasmedge-macro = "0.3.0"
+wasmedge-types = "0.3.1"
+wasmedge-sys = {version = "0.12.2", default-features = false}
+wasmedge-sdk = "0.7.1"
+
+[features]
+aot = ["wasmedge-sys/aot"]
+async = ["wasmedge-sys/async"]
+default = []
+standalone = ["wasmedge-sys/standalone"]
+wasi_crypto = ["wasmedge-sys/wasi_crypto"]
+wasi_nn = ["wasmedge-sys/wasi_nn"]
+
+[dev-dependencies]
+tokio = {version = "1", features = ["full"]}

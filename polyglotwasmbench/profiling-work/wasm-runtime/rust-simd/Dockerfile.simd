@@ -1,0 +1,3 @@
+FROM scratch
+COPY simd.wasm simd.wasm
+CMD ["./simd.wasm", "256", "256", "100"]

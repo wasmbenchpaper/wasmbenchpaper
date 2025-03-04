@@ -1,0 +1,19 @@
+FROM ubuntu:22.10
+
+WORKDIR /app
+
+
+COPY copy-file/move2kube.mp4 move2kube.mp4
+
+# COPY wasmedge lib
+COPY --from=us.icr.io/polyglotwasmbench/sdk-wrapper-buildstage-time /root/.wasmedge/lib /root/.wasmedge/lib
+ENV LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/root/.wasmedge/lib
+
+# Copy WASM module
+COPY --from=us.icr.io/polyglotwasmbench/sdk-wasm-library-time:latest /wasms/copy-file/rust/main.wasm main.wasm
+
+#  Copy Wrapper
+COPY --from=us.icr.io/polyglotwasmbench/sdk-wrapper-library-time:latest /wrappers/output/rust_wasmedge_wrapper rust_wasmedge_wrapper
+
+
+CMD [ "./rust_wasmedge_wrapper", "main.wasm", "./move2kube.mp4", "./move2kube_copy.mp4"]

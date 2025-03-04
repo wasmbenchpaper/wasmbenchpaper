@@ -1,0 +1,5 @@
+FROM python:3.9
+COPY simd.py simd.py
+RUN pip install numpy
+CMD ["python", "./simd.py", "256", "256", "100"]
+

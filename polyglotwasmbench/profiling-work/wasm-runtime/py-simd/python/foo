@@ -1,0 +1,16 @@
+Tracing while running: "echo -e abc\0def"...
+SYSCALL              COUNT
+access                   1
+exit_group               1
+munmap                   1
+write                    1
+arch_prctl               2
+brk                      3
+mprotect                 3
+read                     3
+pread64                  6
+newfstat                19
+close                   20
+mmap                    22
+newstat                 32
+openat                  50

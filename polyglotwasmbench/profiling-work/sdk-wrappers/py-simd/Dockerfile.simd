@@ -1,0 +1,6 @@
+FROM python:3.9
+RUN pip install wasmtime
+COPY wrapper.py wrapper.py
+COPY simd.wasm simd.wasm
+CMD ["python", "./wrapper.py", "./simd.wasm"]
+

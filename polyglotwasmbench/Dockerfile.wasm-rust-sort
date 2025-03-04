@@ -1,0 +1,9 @@
+FROM ubuntu:22.10
+
+WORKDIR /app
+
+# Copy WASM module
+COPY --from=us.icr.io/polyglotwasmbench/sdk-wasm-library-time:latest /wasms/sort/rust/main.wasm main.wasm
+
+
+CMD ["main.wasm"]
