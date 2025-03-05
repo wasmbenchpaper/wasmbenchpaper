@@ -27,6 +27,7 @@ fi
 lang=rust
 wl=sort
 OUTPUT_DIR="../../../profiling_results_$iter/native/$lang/$wl"
+mkdir -p "$OUTPUT_DIR"
 OUTPUT_DIR=$(realpath $OUTPUT_DIR)
 LOGS_DIR="$OUTPUT_DIR/logs"
 mkdir -p $LOGS_DIR
