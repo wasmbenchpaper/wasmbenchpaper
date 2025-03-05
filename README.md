@@ -43,6 +43,12 @@ The Python script and instructions for creating the charts are in the [charts](.
 
 These are some of the major dependencies used by the workloads:
 
+#### Profiling tools
+
+We use the Linux `perf` command and the surrounding tool suite (`syscount`, etc.) to profile the workloads.
+
+You can clone and add this repo to the `PATH`: https://github.com/brendangregg/perf-tools?tab=readme-ov-file#install
+
 #### WebAssembly Runtimes
 
 - Wasmer https://wasmer.io/products/runtime
